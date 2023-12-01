@@ -1,0 +1,3 @@
+Analisa Jobsheet 1.2
+
+Pada awal dijalankan lampu mati, lalu pada detik 15ms lampu menyala terang 255 dutycyle, lalu mati kembali

@@ -1,0 +1,3 @@
+Analisa 1.3 ADC dan DAC
+
+Pada awal dijalankan potentiometer bernilai 0, lalu diputar sehingga mendapatkan nilai 4095, kemudian delay
