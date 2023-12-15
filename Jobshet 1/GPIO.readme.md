@@ -2,13 +2,12 @@
 <h1 align="">GPIO</h1>
 <h1 align="">A. Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 detik, 2 detik, dan 3 detik sekali.</h1>
 
-<br>1. Alat dan Bahan</p>
-
-<br>ESP32 ==> 1 buah</p>
-<br>LED ==> 1 buah
-<br>Resistor 220 Ohm ==> 1 buah
-<br>Resistor 10k Ohm ==> 1 buah
-<br>Push button ==> 1 buah
+<h3>1. Alat dan Bahan</h3>
+ESP32 ==> 1 buah
+LED ==> 1 buah
+Resistor 220 Ohm ==> 1 buah
+Resistor 10k Ohm ==> 1 buah
+Push button ==> 1 buah
 
 <br>2. Rangkaian
 <br>![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/6331087e-8f68-4a7f-ad8a-31dec91569ff)
