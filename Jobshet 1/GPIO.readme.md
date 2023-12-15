@@ -9,13 +9,13 @@ Resistor 220 Ohm ==> 1 buah
 Resistor 10k Ohm ==> 1 buah
 Push button ==> 1 buah
 
-<br>2. Rangkaian
-<br>![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/6331087e-8f68-4a7f-ad8a-31dec91569ff)
+<h3>2. Rangkaian</h3>
+![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/6331087e-8f68-4a7f-ad8a-31dec91569ff)
 
-<br>3. Program
-<br>![Program GPIO](https://github.com/milham08330/Embedded-System/assets/42812745/e34f17fb-5bb4-496d-8a7f-cf48a033c28b)
+<h3>3. Program</h3>
+<h3>![Program GPIO](https://github.com/milham08330/Embedded-System/assets/42812745/e34f17fb-5bb4-496d-8a7f-cf48a033c28b)
 
-<br>4. Hasil 
+<h3>4. Hasil</h3> 
 <br>Led blink 1 detik 
 
 
