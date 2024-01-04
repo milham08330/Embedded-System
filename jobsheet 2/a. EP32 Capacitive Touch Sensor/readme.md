@@ -9,8 +9,8 @@ Dalam percobaan ini program dibuat untuk dapat memahami bagaimana cara kerja pro
 <img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/a175edaa-7eb8-41b2-aad1-dbb8a9c13f3f" width="500">
 
 ## 3. Source Code
-Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/blob/master/jobsheet%202/a.%20EP32%20Capacitive%20Touch%20Sensor/1.%20program%20contoh%20touch%20test/touch_1.ino"> disini </a> atau dibawah ini
-<img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/a7fa7af9-3a41-4f59-b262-d289d74a95a7" width="800">
+![job2 1](https://github.com/milham08330/Embedded-System/assets/42812745/ff827f39-6443-4e6a-970e-98591171609a)
+
 
 ## 4. Hasil dan Pembahasan
 
