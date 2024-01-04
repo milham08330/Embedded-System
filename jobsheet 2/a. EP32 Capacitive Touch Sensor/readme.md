@@ -33,8 +33,8 @@ Dalam percobaan ini program dibuat untuk dapat menghasilkan LED akan memberikan 
 
 ## 3. Source Code
 
-Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/blob/master/jobsheet%202/a.%20EP32%20Capacitive%20Touch%20Sensor/2.%20LED%20menyala%20ketika%20sensor%20disentuh%2C%20dan%20LED%20akan%20mati%20ketika%20sensor%20tidak%20disentuh/touch_2.ino"> disini </a> atau dibawah ini
-<img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/c6c95bb7-e30f-444d-8647-563d43122433" width="800">
+![job2 menyala sensor disentuh](https://github.com/milham08330/Embedded-System/assets/42812745/007ee08c-68d0-432b-b281-7d445af28034)
+
 
 ## 4. Hasil dan Pembahasan
 
