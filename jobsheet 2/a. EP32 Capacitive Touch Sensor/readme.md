@@ -79,8 +79,8 @@ Dalam percobaan ini program dibuat untuk menguji sentuhan pada modul ESP32 denga
 
 ## 3. Source Code
 
-Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/blob/master/jobsheet%202/a.%20EP32%20Capacitive%20Touch%20Sensor/4.%20ketika%20LED%20menyala%20Serial%20Monitor%20menampilkan%20angka%20yang%20akan%20bertambah%20setiap%20kali%20sensor%20disentuh/touch_4.ino"> disini </a> atau dibawah ini
-<img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/143daddd-db19-40c0-a695-77d3cc0cf1e1" width="800">
+![job 2 serial monitor](https://github.com/milham08330/Embedded-System/assets/42812745/d04cc4aa-e11c-4789-9af5-409999636e5a)
+
 
 ## 4. Hasil dan Pembahasan
 
