@@ -104,8 +104,8 @@ Dalam percobaan ini digunakan 3 LED yang akan menyala running saat sensor disent
 
 ## 3. Source Code
 
-Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/blob/master/jobsheet%202/a.%20EP32%20Capacitive%20Touch%20Sensor/5.%20LED%20nyala%20running%20saat%20sensor%20disentuh/touch_5.ino"> disini</a> atau dibawah ini
-<img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/83c476ae-a76f-447c-9ecf-2c20fee24fd4" width="800">
+![job2 running](https://github.com/milham08330/Embedded-System/assets/42812745/fd776f09-b8ab-4c08-8dea-ce99c3a41880)
+
 
 ## 4. Hasil dan Pembahasan
 
