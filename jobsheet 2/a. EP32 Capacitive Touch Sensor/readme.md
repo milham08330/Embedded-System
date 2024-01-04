@@ -56,9 +56,7 @@ Dalam percobaan ini program dibuat untuk dapat melihat ketika sensor disentuh, L
 <img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/a175edaa-7eb8-41b2-aad1-dbb8a9c13f3f" width="500">
 
 ## 3. Source Code
-
-Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/blob/master/jobsheet%202/a.%20EP32%20Capacitive%20Touch%20Sensor/3.%20ketika%20sensor%20disentuh%2C%20LED%20menyala%20Blink/touch_3.ino"> disini </a> atau dibawah ini
-<img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/58c30ecc-3956-4c74-baf2-fbbc00b837d9" width="800">
+![job 2 led blink nyala](https://github.com/milham08330/Embedded-System/assets/42812745/8f51ee14-4462-4845-9407-731ffc628c38)
 
 ## 4. Hasil dan Pembahasan
 
