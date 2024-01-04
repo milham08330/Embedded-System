@@ -11,10 +11,8 @@
 <img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/ea39039f-9943-4990-bec3-5044040809e7">
 
 ## 3. Source Code
+![job2 c 1](https://github.com/milham08330/Embedded-System/assets/42812745/17f3c8c2-3bb3-4eb3-b1fc-084ed69c9649)
 
-Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/blob/master/jobsheet%202/c.%20Mengakses%20Sensor%20RFID%20(SPI%20Communication)/1.%20program%20contoh%20RFID/rfid_1.ino">disini</a> atau dibawah ini
-
-<img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/a5a9a013-9ecb-49f9-8d79-3219afe7a1d5" width="800">
 
 ## 4. Hasil dan Pembahasan
 
@@ -37,8 +35,8 @@ Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/b
 
 ## 3. Source Code
 
-Program dapat dilihat <a href="https://github.com/sabrinavirry/Sistem-Embedded/blob/master/jobsheet%202/c.%20Mengakses%20Sensor%20RFID%20(SPI%20Communication)/2.%20RFID%20dikenali%20maka%20LED%20hijau%20dan%20servo%20menyala/rfid___servo.ino">disini</a> atau dibawah ini
-<img src="https://github.com/sabrinavirry/Sistem-Embedded/assets/151721571/5b3258df-4ebc-49fc-a5e5-581f8bb02b37">
+![job2 c 2](https://github.com/milham08330/Embedded-System/assets/42812745/540653e4-2806-4567-955f-e9dc0c78a020)
+
 
 ## 3. Hasil dan Pembahasan
 
