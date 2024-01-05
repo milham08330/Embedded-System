@@ -7,7 +7,7 @@
 ## 2. Source Code
 
 1. Program ESP32 sebagai sender dapat dilihat <a href="https://github.com/brianrahma/system-embedded/blob/master/jobsheet%202.1/b.%20ESP-NOW%20One-Way%20Point-to-Point%20Communication/1.%20Send%20dan%20receive%20mac%20address/sendd_mac_address.ino">disini
-2. Program ESP32 sebagai receiver dapat dilihat <a href="https://github.com/brianrahma/system-embedded/blob/master/jobsheet%202.1/b.%20ESP-NOW%20One-Way%20Point-to-Point%20Communication/1.%20Send%20dan%20receive%20mac%20address/receive_mac_address.ino">disini
+2. Program ESP32 sebagai receiver dapat dilihat <a href="https://github.com/milham08330/Embedded-System/blob/master/jobsheet%202.1/b.%20ESP-NOW%20One-Way%20Point-to-Point%20Communication/1.%20Send%20dan%20receive%20mac%20address/sendd_mac_address.ino">disini
 3. Program ESP32 data dummy dengan ukuran yang terbaca oleh receiver ± 250 byte dapat dilihat disini <a href="https://github.com/milham08330/Embedded-System/blob/master/jobsheet%202.1/b.%20ESP-NOW%20One-Way%20Point-to-Point%20Communication/2.%20data%20dummy%20250/send_mac_address.ino">disini
 
 ## 3. Hasil dan Pembahasan
