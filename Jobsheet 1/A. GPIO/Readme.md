@@ -72,7 +72,8 @@ Program pertama akan digunakan untuk membuat blink 1 detik sekali menggunakan ti
     * Push button       ==> 1 buah
 
 2. Rangkaian
-![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/a463a2d8-5739-45a1-96ac-a4eb0641ea41)
+   
+    ![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/a463a2d8-5739-45a1-96ac-a4eb0641ea41)
 
 
 4. Program
