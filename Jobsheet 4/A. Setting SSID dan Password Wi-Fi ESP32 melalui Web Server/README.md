@@ -236,28 +236,27 @@ void createWebServer()
 
 ## 3. Flowchart
 
-<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/8286f7b0-52ad-4662-9eb9-9feac8efd2d0" height=700rem>
+![flow_job4_a](https://github.com/milham08330/Embedded-System/assets/42812745/c03d1622-3622-4573-a3c9-b270f79fe6e8)
 
 ## 4. Hasil dan Pembahasan
 ### Dokumentasi Hasil
 1. Tampilan Awal Serial Monitor Sebelum Dihubungkan
-
-   ![1  Tampilan Awal Serial Monitor Sebelum Dihubungkan](https://github.com/ArthZ01/System-Embedded/assets/91934953/00a64629-aaed-4876-8403-c0e9d0839872)
+   
+   ![dok4_a1](https://github.com/milham08330/Embedded-System/assets/42812745/6e4e1679-cd0c-4676-a490-108bda737428)
 
 2. Tampilan Web & WiFi
+   
+   ![dok4_a2](https://github.com/milham08330/Embedded-System/assets/42812745/4adb3991-d01c-468c-b55a-990d8e9aaa38)
 
-   ![tampilan wifi](https://github.com/ArthZ01/System-Embedded/assets/91934953/b9bfab62-391f-494b-9dac-bbf6bda4ef51)
-   ![2  tampilan web](https://github.com/ArthZ01/System-Embedded/assets/91934953/b1f7d66e-bfef-45f3-a4d7-6b5a824b09e2)
+   ![dok4_a22](https://github.com/milham08330/Embedded-System/assets/42812745/ae4a65e9-deee-4e14-bff4-461154368cd8)
 
 3. Serial Monitor Setelah Memasukkan SSID dan PASS
+4. 
+   ![dok4_a3](https://github.com/milham08330/Embedded-System/assets/42812745/6403924d-a099-4298-b678-4336476e0c83)
 
-   ![SSID dan Pass](https://github.com/ArthZ01/System-Embedded/assets/91934953/371172c6-b42d-47f1-953c-8e28cff1680d)
-
-   ![3  serial monitor setelah memasukan ssid dan pass](https://github.com/ArthZ01/System-Embedded/assets/91934953/51e90c6f-72ea-468b-b1d5-dcd2800f2f56)
+5. Serial Monitor Setelah Berhasil Terhubung
    
-4. Serial Monitor Setelah Berhasil Terhubung
-
-   ![4  Serial Monitor Setelah Berhasil Terhubung](https://github.com/ArthZ01/System-Embedded/assets/91934953/6bb90203-f938-451f-8f63-ec08a626a5ed)
+   ![dok4_a4](https://github.com/milham08330/Embedded-System/assets/42812745/32270913-ac3b-4fd7-b5e9-96051e55576c)
 
 
 ### Pembahasan
