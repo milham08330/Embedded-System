@@ -1,6 +1,6 @@
 # C. Mengirim Dummy Data untuk Simulasi I/O Menggunakan Hardware
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan
 
 Dalam percobaan ini program dibuat untuk dapat mengirim pesan atau data dengan menggunakan ekstensi MQTTbox
 
