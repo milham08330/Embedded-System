@@ -41,7 +41,12 @@ void loop() {
  }
 }
 ```
-<br>4. Hasil 
+
+<br>4. Flowchart
+![flow_job1_1](https://github.com/milham08330/Embedded-System/assets/42812745/fbbe4a1a-d031-49fc-8568-538d4129e591)
+
+
+<br>5. Hasil 
 <br>Led blink 1 detik 
 
 
@@ -90,7 +95,12 @@ for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){
  }
 }
 ```
-<br>4. Hasil 
+<br>4. Flowchart 
+
+![flow_job1_2](https://github.com/milham08330/Embedded-System/assets/42812745/a3493f0e-0926-41da-b901-d32fbf6659b1)
+
+
+<br>5. Hasil 
 <br>Led Push Button
 
 
@@ -144,7 +154,11 @@ edcWrite(ledChannel, dutyCycle);
  }
 }
 ```
-<br>4. Hasil 
+<br>4. Flowchart
+
+
+
+<br>5. Hasil 
 <br>Led Push Button 
 
 https://github.com/milham08330/Embedded-System/assets/42812745/0e0e3ff0-2a9e-4ae6-9677-ce272f30bf16
