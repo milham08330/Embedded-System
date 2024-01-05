@@ -13,9 +13,34 @@ Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 deti
    ![image](https://github.com/alfan459/Embedded-System/assets/54757609/4850f38f-859e-461b-a830-cd9b53a8e40e)
 
 3. Program
-
-    ![beautify-picture (2)](https://github.com/JustBadrun/Embeded_System/assets/128286595/a4125fea-f606-4737-bbac-69fee09ddece)
-
+```
+// set pin numbers
+const int buttonPin = 4; // the number of the pushbutton pin
+const int ledPin = 5; // the number of the LED pin
+// variable for storing the pushbutton status 
+int buttonState = 0;
+void setup() {
+ Serial.begin(115200); 
+ // initialize the pushbutton pin as an input
+ pinMode(buttonPin, INPUT);
+ // initialize the LED pin as an output
+ pinMode(ledPin, OUTPUT);
+}
+void loop() {
+ // read the state of the pushbutton value
+ buttonState = digitalRead(buttonPin);
+ Serial.println(buttonState);
+ // check if the pushbutton is pressed.
+ // if it is, the buttonState is HIGH
+ if (buttonState == HIGH) {
+ // turn LED on
+ digitalWrite(ledPin, HIGH);
+ } else {
+ // turn LED off
+ digitalWrite(ledPin, LOW);
+ }
+}
+```
 4. Flowchart
 
    ![Flowchart1](https://github.com/alfan459/Embedded-System/assets/54757609/3062ca6a-98dd-441c-8fe5-7019fac6f825)
