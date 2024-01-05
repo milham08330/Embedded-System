@@ -13,7 +13,7 @@
 
 ## 3. Flow Program
 
-![Flow Program](https://github.com/ArthZ01/System-Embedded/assets/91934953/81454a50-29fd-481f-8b8f-3e68c6b977ba)
+![flow_job4_a](https://github.com/milham08330/Embedded-System/assets/42812745/277c7d34-bb10-488f-9626-e68acc7ddaa0)
 
 
 ## 4. Hasil Percobaan Transmisi Data Dummy Menuju Node-Red Menggunakan Protokol HTTP Metode GET
@@ -21,23 +21,23 @@
 
 1. Flow chart
 
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/695f4ce4-01d0-4445-a892-19055b93a334" height=700rem>
+   ![flow_job4_b](https://github.com/milham08330/Embedded-System/assets/42812745/00d36b92-cded-40eb-b1b0-40c633b8a8a6)
    
 2. Output serial monitor
 
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/930cbfb6-1a76-4706-9b1e-bbe84c709ebf" width=80% height=80%>
+   ![flow_job4_2](https://github.com/milham08330/Embedded-System/assets/42812745/7f29c68e-2b0f-4fe1-b5d5-e29a0bf7e7e7)
    
-4. Debug Node-RED
+3. Debug Node-RED
    
-   ![3  Debug Node-RED](https://github.com/ArthZ01/System-Embedded/assets/91934953/73dcece1-cbf4-4ebc-8748-51bf9fbec73a)
+   ![flow_job4_3](https://github.com/milham08330/Embedded-System/assets/42812745/f1d5cb4e-11ad-499f-bb0a-0f802294660a)
 
-5. Dashboard Node-RED
+4. Dashboard Node-RED
 
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/013e2f79-fb78-4f0e-8d39-8cacd99390fc" width=80% height=80%>
+   ![flow_job4_4](https://github.com/milham08330/Embedded-System/assets/42812745/d9c4a964-6e98-4f3d-a330-b9d243a42ed9)
    
-7. Tabel database MySQL
+5. Tabel database MySQL
    
-   ![5  Tabel database MySQL](https://github.com/ArthZ01/System-Embedded/assets/91934953/2a903d24-d8db-4116-98a3-218aef4c5162)
+   ![flow_job4_5](https://github.com/milham08330/Embedded-System/assets/42812745/1e8bb1a0-595e-4ce1-9ff0-a1568130d9a5)
 
 
 ### Source Code
