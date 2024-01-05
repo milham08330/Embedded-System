@@ -1,6 +1,6 @@
 # B. Basic Flow Transmisi Data Menggunakan Protokol HTTP 
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan
 <p align="justify">Pada percobaan ini Basic Flow atau alur dasar transmisi data menggunakan protokol HTTP mengacu pada urutan langkah-langkah yang terjadi saat klien dan server berkomunikasi melalui protokol Hypertext Transfer Protocol (HTTP). 
 
 ## 2. Alat dan Bahan
