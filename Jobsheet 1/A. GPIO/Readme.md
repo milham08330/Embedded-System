@@ -10,7 +10,8 @@ Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 deti
 
 2. Rangkaian
 
-   ![image](https://github.com/alfan459/Embedded-System/assets/54757609/4850f38f-859e-461b-a830-cd9b53a8e40e)
+![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/3315aacb-0598-4a4e-ae46-9679b2e153fc)
+
 
 3. Program
 ```cpp
@@ -43,53 +44,13 @@ void loop() {
 ```
 4. Flowchart
 
-   ![Flowchart1](https://github.com/alfan459/Embedded-System/assets/54757609/3062ca6a-98dd-441c-8fe5-7019fac6f825)
+![flow_job1_1](https://github.com/milham08330/Embedded-System/assets/42812745/76c92be9-0c6f-4093-b2f5-2febd8741a2b)
 
 5. Hasil dan Pembahasan
 
    https://github.com/JustBadrun/Embeded_System/assets/128286595/a0d04c5c-72f7-4751-bc99-6c04fcde8f4c
 
-   Kode di atas adalah program untuk mengendalikan LED dengan menggunakan ESP32. Berikut adalah penjelasan singkat untuk setiap bagian dari kode tersebut:
-
-  * Inisialisasi PIN dan Setup:
-   ```cpp
-   const int LedPin = 5;  // Led dihubungkan pada pin GPIO 5
-
-   void setup() {
-     pinMode(LedPin, OUTPUT);  // Inisialisasi Led sebagai OUTPUT
-   }
-   ```
-   Kode ini menetapkan bahwa LED akan dihubungkan ke pin GPIO 5 dan menginisialisasi pin tersebut sebagai output di dalam fungsi `setup()`. Fungsi `setup()` dijalankan sekali pada awal program.
-
-  * Loop Utama:
-   ```cpp
-   void loop() {
-     // Nyala 100ms dan mati selama 1 detik
-     digitalWrite(LedPin, HIGH);
-     delay(100);
-     digitalWrite(LedPin, LOW);
-     delay(1000);
-
-     // Nyala 1 detik dan mati selama 1 detik
-     digitalWrite(LedPin, HIGH);
-     delay(1000);
-     digitalWrite(LedPin, LOW);
-     delay(1000);
-
-     // Nyala 2 detik dan mati selama 1 detik
-     digitalWrite(LedPin, HIGH);
-     delay(2000);
-     digitalWrite(LedPin, LOW);
-     delay(1000);
-
-     // Nyala 3 detik dan mati selama 1 detik
-     digitalWrite(LedPin, HIGH);
-     delay(3000);
-     digitalWrite(LedPin, LOW);
-     delay(1000);
-   }
-   ```
-   Bagian ini merupakan loop utama program yang akan terus diulang. Setiap iterasi loop, LED akan menyala dan mati dengan pola waktu tertentu. Pola tersebut dijelaskan sebagai berikut:
+    LED akan menyala dan mati dengan pola waktu tertentu. 
    - LED menyala selama 100ms dan mati selama 1 detik.
    - LED menyala selama 1 detik dan mati selama 1 detik.
    - LED menyala selama 2 detik dan mati selama 1 detik.
