@@ -9,13 +9,13 @@
 2. Program ESP32 sebagai receiver dapat dilihat <a href="https://github.com/milham08330/Embedded-System/blob/master/jobsheet%202.1/c.%20One-Way%2C%20One-to-Many%20Communication/1.%20Mengirim%20Pesan%20yang%20Sama%20Ke%20Beberapa%20Board%20ESP32/receiver.ino">disini
 
 ### C. Hasil dan Pembahasan
-![J2 1 -C-1-1](https://github.com/brianrahma/system-embedded/assets/82065700/48437206-8f7a-4bdc-aa1c-5e62e8337466)
+![hasil1](https://github.com/milham08330/Embedded-System/assets/42812745/723efd80-a201-40a4-b211-2d1337f40680)
 
 <p align="justify">Pada percobaan ini  menggunakan empat modul ESP32, di mana satu modul berperan sebagai Master/sender dan tiga modul lainnya sebagai receiver. Langkah awal memerlukan MAC Address dari tiap ESP32 yang akan menjadi receivernya, diikuti dengan memasukkan MAC address receiver pada program Master untuk mengirimkan data seragam ke setiap modul receiver. Program tersebut diunggah ke masing-masing modul, dan kemudian dilakukan pemantauan melalui Serial Monitor di Arduino IDE.
 
 **Apabila salah satu board Receiver dimatikan**
 
-![J2 1 -C-1-1](https://github.com/brianrahma/system-embedded/assets/82065700/6a07e44b-3b04-45fe-984e-db32e085ddab)
+![hasil2](https://github.com/milham08330/Embedded-System/assets/42812745/263d0a5f-cc94-4a7c-a909-b95d3a4cd629)
 
 <p align="justify">Yang terjadi adalah komunikasi antara sender dan receiver akan terputus, artinya data yang dikirim sender tidak akan diterima oleh receiver, dan pada sender tercetak "Delivery Fail"
  
@@ -29,6 +29,6 @@
 
 ### C. Hasil dan Pembahasan
 
-![J2 1 -C-1-2](https://github.com/brianrahma/system-embedded/assets/82065700/a764446b-a2b5-48d5-9c07-44a05253ca96)
+![Uploading hasil3.gif…]()
 
 <p align="justify">Pada percobaan ini masih sama dengan sebelumnya, yaitu menggunakan 1 ESP yang bertindak sebagai Master/sender dan 3 ESP bertindak sebagai receiver. Perbedaannya terdapat pada data yang dikirimkan ke masing-masing receiver tidak sama. Receiver 1 akan mendapatkan data yang berisi variabel dengan tipe data integer, receiver 2 mendapatkan data variabel dengan tipe data float, dan receiver 3 mendapatkan data variabel dengan tipe data string.
