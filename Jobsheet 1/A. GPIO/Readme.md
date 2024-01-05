@@ -10,7 +10,7 @@ Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 deti
 
 2. Rangkaian
 
-![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/3315aacb-0598-4a4e-ae46-9679b2e153fc)
+    ![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/3315aacb-0598-4a4e-ae46-9679b2e153fc)
 
 
 3. Program
