@@ -1,6 +1,6 @@
 # A. Basic Flow
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan
 
 <p align="justify">Percobaan Basic Flow di Node-RED menggunakan dua node utama, yaitu Inject Node sebagai inisiator dan Debug Node sebagai alat pemantau nilai payload
 
