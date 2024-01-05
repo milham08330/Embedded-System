@@ -10,9 +10,14 @@
    
 ## 3. Hasil Percobaan
 
-1. Flow Program mekanisme menyimpan data ke dalam database
-   <img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/456fe48f-a2f3-4e14-b91a-4cf232585284" width="800">
-3. Debug Node Red <br>
-   <img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/a9187fb1-a98a-49f4-ae61-7e832dd61529" width="500">
-5. Tabel Database <br>
-   <img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/5944e8b4-6cac-48dd-b773-4bcfc587516a" width="600">
+a. Flow Program mekanisme menyimpan data ke dalam database
+
+![job8a](https://github.com/milham08330/Embedded-System/assets/42812745/7f097d5a-f7d1-4416-8856-48e90748e1c9)
+
+b. Debug Node Red <br>
+
+![job8b](https://github.com/milham08330/Embedded-System/assets/42812745/39fc071c-5c22-4c37-a6d6-50c020f1d8f6)
+
+c. Tabel Database <br>
+
+![job8c](https://github.com/milham08330/Embedded-System/assets/42812745/1e525f00-bc3f-4118-bc31-11b23c178237)
