@@ -2,22 +2,77 @@
 
 ## 1. Rangkaian
 
-<img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/df22b4a6-37f9-4eda-8d9c-644d8d0cfec3" width="500">
+![rangkaian](https://github.com/milham08330/Embedded-System/assets/42812745/156a362f-a2c8-4d84-af9c-24e99dff72e4)
 
 ## 2. Source Code
+```cpp
+#include "WiFi.h"
 
-Program dapat dilihat <a href="https://github.com/brianrahma/brian-system-embedded/blob/master/jobsheet%203/a.%20ESP32%20Wi-Fi%20Modes%20dan%20Wifi-Scan/program/ESP32%20Wi-Fi%20Modes%20dan%20Wifi-Scan.ino"> disini </a> atau dibawah ini
-<img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/ac235960-d8f9-4ae1-acc6-5da18f9cdb14" width="800">
+void setup() {
+  // Memulai komunikasi serial dengan baud rate 115200
+  Serial.begin(115200);
+  
+  // Mengatur mode WiFi ke mode STA (station) dan memutuskan koneksi jika sudah terhubung sebelumnya
+  WiFi.mode(WIFI_STA);
+  WiFi.disconnect();
+  delay(100);
+  
+  // Mencetak pesan setup selesai ke Serial Monitor
+  Serial.println("Setup done");
+}
+
+void loop() {
+  // Mencetak pesan "scan start" ke Serial Monitor
+  Serial.println("scan start");
+  
+  // WiFi.scanNetworks akan mengembalikan jumlah jaringan yang ditemukan
+  int n = WiFi.scanNetworks();
+  
+  // Mencetak pesan "scan done" ke Serial Monitor
+  Serial.println("scan done");
+  
+  if (n == 0) {
+    // Mencetak pesan "no networks found" jika tidak ada jaringan yang ditemukan
+    Serial.println("no networks found");
+  } else {
+    // Mencetak jumlah jaringan yang ditemukan
+    Serial.print(n);
+    Serial.println(" networks found");
+    
+    for (int i = 0; i < n; ++i) {
+      // Mencetak SSID dan RSSI untuk setiap jaringan yang ditemukan
+      Serial.print(i + 1);
+      Serial.print(": ");
+      Serial.print(WiFi.SSID(i));
+      Serial.print(" (");
+      Serial.print(WiFi.RSSI(i));
+      Serial.print(")");
+      
+      // Mencetak tanda "*" jika jaringan memiliki enkripsi (WPA/WPA2)
+      Serial.println((WiFi.encryptionType(i) == WIFI_AUTH_OPEN) ? " " : "*");
+      
+      // Menambahkan delay 10ms
+      delay(10);
+    }
+  }
+  
+  // Mencetak baris kosong untuk memisahkan hasil pemindaian
+  Serial.println("");
+  
+  // Menunggu 5 detik sebelum melakukan pemindaian lagi
+  delay(5000);
+}
+```
 
 ## 3. Flowchart
 
- ![flowchart](https://github.com/brianrahma/brian-system-embedded/assets/82065700/3114fd55-73df-4bfa-b05e-346ac04eaa67)
+![flow_a](https://github.com/milham08330/Embedded-System/assets/42812745/879b41ef-6dca-44d8-96a0-ad7d86f16c6b)
 
  ## 4. Hasil dan Pembahasan
 
  **Hasil percobaan :**
  
- ![A gif](https://github.com/brianrahma/brian-system-embedded/assets/82065700/6cef6d0a-9fe6-4cae-a4fb-fe42122918a4)
+![Uploading hasil_a.gif…]()
 
 <p align="justify">Dalam percobaan ini ESP32 akan digunakan untuk melakukan pemindaian (scanning) jaringan WiFi di sekitar perangkat ESP32 menggunakan modul WiFi. Tujuan dari percobaan ini adalah untuk menampilkan daftar jaringan WiFi yang terdeteksi berserta dengan informasi seperti nama SSID, kekuatan sinyal (RSSI), dan apakah jaringan tersebut memiliki enkripsi (WPA/WPA2) atau tidak.
 
