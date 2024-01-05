@@ -113,8 +113,39 @@ Program ini digunakan untuk menyalakan LED secara blink ketika sensor touch dise
 
 ## Program
 
-![beautify-picture (5)](https://github.com/JustBadrun/Embeded_System/assets/128286595/7f2c4e01-25c1-45f0-8686-d2d72c358add)
+```cpp
+// Mengatur pin
+const int touchPin = 4;        // Pin Touch yakni di GPIO4    
+const int ledPin = 16;         // Pin LED dihubungkan pada GPIO16
 
+const int threshold = 20;      // mengatur nilai treshold 
+int touchValue;                // variable untuk menympan nilai touch pin
+
+void setup(){
+  Serial.begin(115200);        // komunikasi serial diatur pada baudrate 115200 
+  delay(1000);                 // delay awal 
+  pinMode (ledPin, OUTPUT);    // inisialisasi LED sebagai output
+}
+
+void loop(){
+  touchValue = touchRead(touchPin);    // membaca nilai touch
+  Serial.print(touchValue);            // menampilkan nilai touch ke serial monitor
+  
+  // Jika nilai touch lebih kecil dari nilai treshold, maka nyalakan lampu
+  if(touchValue < threshold){
+    // turn LED on
+    digitalWrite(ledPin, HIGH);
+    Serial.println(" - LED on");
+  }
+  // Jika tidak, matikan lampu
+  else{
+    // turn LED off
+    digitalWrite(ledPin, LOW);
+    Serial.println(" - LED off");
+  }
+  delay(500);
+}
+```
 ## Flowchart
 
 ![flow_job2_a3](https://github.com/milham08330/Embedded-System/assets/42812745/b4354562-1bae-440f-96ac-fb985a44f55f)
@@ -179,7 +210,37 @@ Program ini digunakan untuk menampilkan nilai yang terus bertambah pada serial m
 
 ## Program
 
-![beautify-picture (6)](https://github.com/JustBadrun/Embeded_System/assets/128286595/801883ae-f591-4018-ab52-616140ef6e8d)
+```cpp
+const int ledPin = 2; // Pin LED
+const int touchPin = 4; // Pin sensor sentuh
+int touchCount = 0; // Variabel untuk menghitung sentuhan
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(ledPin, OUTPUT);
+  pinMode(touchPin, INPUT);
+}
+
+void loop() {
+  if (digitalRead(touchPin) == HIGH) {
+    // Jika sensor sentuh disentuh, tambahkan 1 ke touchCount
+    touchCount++;
+    
+    // Hidupkan LED
+    digitalWrite(ledPin, HIGH);
+
+    // Tampilkan touchCount di Serial Monitor
+    Serial.print("Sentuhan ke-");
+    Serial.println(touchCount);
+    
+    // Tunggu sebentar untuk menghindari deteksi berulang
+    delay(500);
+  } else {
+    // Matikan LED jika sensor tidak disentuh
+    digitalWrite(ledPin, LOW);
+  }
+}
+```
 
 ## Flowchart
 
@@ -208,6 +269,93 @@ Program ini digunakan untuk menyalakan LED secara running dari kiri ke kanan ket
 
 ## Program
 
+```cpp
+// Mengatur pin
+const int touchPin = 4;        // Pin Touch yakni di GPIO4    
+const int led1 = 16;           // LED1 dihubungkan pada GPIO16
+const int led2 = 17;            // LED2 dihubungkan pada GPIO17
+const int led3 = 18;            // LED3 dihubungkan pada GPIO18
+
+const int threshold = 20;      // mengatur nilai treshold 
+int touchValue;                // variable untuk menympan nilai touch pin
+
+void setup(){
+  Serial.begin(115200);        // komunikasi serial diatur pada baudrate 115200 
+  delay(1000);                 // delay awal 
+  // inisialisasi LED sebagai output:
+  pinMode (led1, OUTPUT);
+  pinMode (led2, OUTPUT);
+  pinMode (led3, OUTPUT);    
+}
+
+void loop(){
+  touchValue = touchRead(touchPin);    // membaca nilai touch
+  Serial.print(touchValue);            // menampilkan nilai touch ke serial monitor
+  
+  // Jika nilai touch lebih kecil dari nilai treshold, maka lampu akan blink
+  if(touchValue < threshold){
+    // turn LED on
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, LOW);
+    digitalWrite(led3, LOW);
+    delay(800);
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, LOW);
+    delay(800);
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, HIGH);
+    delay(800);
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, HIGH);
+    delay(800);
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, LOW);
+    digitalWrite(led3, HIGH);
+    delay(800);
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, LOW);
+    digitalWrite(led3, LOW);
+    delay(800);
+
+    // Kanan ke Kiri
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, LOW);
+    digitalWrite(led3, HIGH);
+    delay(800);
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, HIGH);
+    delay(800);
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, HIGH);
+    delay(800);
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, LOW);
+    delay(800);
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, LOW);
+    digitalWrite(led3, LOW);
+    delay(800);
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, LOW);
+    digitalWrite(led3, LOW);
+    delay(800);
+  }
+  // Jika tidak, matikan lampu
+  else{
+    // turn LED off
+    digitalWrite(led1, LOW);
+    digitalWrite(led2, LOW);
+    digitalWrite(led3, LOW);
+  }
+  delay(500);
+}
+```
 
 ## Flowchart
 
