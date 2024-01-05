@@ -25,7 +25,7 @@
 
 ### B. Source Code
 1. Program ESP32 sebagai sender dapat dilihat <a href="https://github.com/brianrahma/system-embedded/blob/master/jobsheet%202.1/c.%20One-Way%2C%20One-to-Many%20Communication/2.%20Mengirim%20Pesan%20yang%20Berbeda%20Ke%20Beberapa%20Board%20ESP32/sender.ino">disini
-2. Program ESP32 sebagai receiver dapat dilihat <a href="https://github.com/brianrahma/system-embedded/blob/master/jobsheet%202.1/c.%20One-Way%2C%20One-to-Many%20Communication/2.%20Mengirim%20Pesan%20yang%20Berbeda%20Ke%20Beberapa%20Board%20ESP32/_receive_mac_Mengirim_Pesan_yang_Berbeda_Ke_Beberapa_Board_ESP3.ino">disini
+2. Program ESP32 sebagai receiver dapat dilihat <a href="https://github.com/milham08330/Embedded-System/blob/master/jobsheet%202.1/c.%20One-Way%2C%20One-to-Many%20Communication/2.%20Mengirim%20Pesan%20yang%20Berbeda%20Ke%20Beberapa%20Board%20ESP32/_receive_mac_Mengirim_Pesan_yang_Berbeda_Ke_Beberapa_Board_ESP3.ino">disini
 
 ### C. Hasil dan Pembahasan
 
