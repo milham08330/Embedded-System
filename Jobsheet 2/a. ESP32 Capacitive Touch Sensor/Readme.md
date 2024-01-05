@@ -30,26 +30,7 @@ https://github.com/alfan459/Embedded-System/assets/54757609/caead734-0d30-4f79-b
 
 Program di atas merupakan program sederhana untuk menguji sensor sentuh pada ESP32. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
-1. **Setup:**
-   ```cpp
-   void setup() {
-     Serial.begin(115200);     // Inisialisasi komunikasi serial dengan baudrate 115200
-     delay(1000);              // Jeda awal selama 1000 milidetik (1 detik)
-     Serial.println("ESP32 Touch Test");  // Menampilkan pesan di Serial Monitor
-   }
-   ```
-
-   Fungsi `setup()` dijalankan sekali pada awal program. Di dalamnya, komunikasi serial diatur dengan baudrate 115200, kemudian terdapat jeda awal selama 1000 milidetik, dan pesan "ESP32 Touch Test" ditampilkan di Serial Monitor.
-
-2. **Loop Utama:**
-   ```cpp
-   void loop() {
-     Serial.println(touchRead(4));  // Membaca dan menampilkan nilai sentuhan pada pin Touch 0 (GPIO 4) di Serial Monitor
-     delay(1000);  // Jeda selama 1000 milidetik (1 detik)
-   }
-   ```
-
-   Bagian ini merupakan loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sentuhan pada pin Touch 0 (GPIO 4) dibaca menggunakan fungsi `touchRead(4)`. Nilai tersebut kemudian ditampilkan di Serial Monitor menggunakan `Serial.println()`. Setelah itu, program menunggu selama 1000 milidetik sebelum membaca kembali nilai sentuhan.
+Loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sentuhan pada pin Touch 0 (GPIO 4) dibaca menggunakan fungsi `touchRead(4)`. Nilai tersebut kemudian ditampilkan di Serial Monitor menggunakan `Serial.println()`. Setelah itu, program menunggu selama 1000 milidetik sebelum membaca kembali nilai sentuhan.
 
 Program ini sederhana dan digunakan untuk memantau nilai sentuhan pada pin Touch 0 (GPIO 4) dari ESP32 dan menampilkannya di Serial Monitor setiap detik sekali. Nilai yang ditampilkan akan berupa angka analog, dan nilai yang lebih tinggi biasanya menunjukkan sentuhan yang lebih kuat.
 <br></br>
@@ -113,44 +94,8 @@ void loop(){
 
 Program di atas merupakan contoh penggunaan sensor sentuh pada ESP32 untuk mengontrol LED. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
-1. **Setup:**
-   ```cpp
-   void setup(){
-     Serial.begin(115200);        // Inisialisasi komunikasi serial dengan baudrate 115200
-     delay(1000);                 // Jeda awal selama 1000 milidetik (1 detik)
-     pinMode (ledPin, OUTPUT);    // Inisialisasi LED sebagai output
-   }
-   ```
 
-   Fungsi `setup()` dijalankan sekali pada awal program. Di dalamnya, komunikasi serial diatur dengan baudrate 115200, terdapat jeda awal selama 1000 milidetik, dan pin LED (GPIO 16) diatur sebagai output.
-
-2. **Loop Utama:**
-   ```cpp
-   void loop(){
-     touchValue = touchRead(touchPin);    // Membaca nilai sentuhan dari pin Touch
-     Serial.print(touchValue);            // Menampilkan nilai sentuhan ke Serial Monitor
-     
-     // Jika nilai sentuhan kurang dari nilai ambang batas (threshold), maka lampu akan berkedip
-     if(touchValue < threshold){
-       // Menyalakan LED
-       digitalWrite(ledPin, HIGH);
-       delay(1000);
-       // Mematikan LED
-       digitalWrite(ledPin, LOW);
-       delay(1000);
-       Serial.println(" - LED Blink");
-     }
-     // Jika tidak, matikan lampu
-     else{
-       // Mematikan LED
-       digitalWrite(ledPin, LOW);
-       Serial.println(" - LED off");
-     }
-     delay(500);  // Jeda selama 500 milidetik sebelum membaca nilai sentuhan lagi
-   }
-   ```
-
-   Bagian ini merupakan loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sentuhan dari pin Touch (GPIO 4) dibaca menggunakan `touchRead(touchPin)`. Nilai tersebut kemudian ditampilkan di Serial Monitor menggunakan `Serial.print()`. Jika nilai sentuhan kurang dari nilai threshold (20), maka LED (GPIO 16) akan berkedip dengan interval 1 detik, dan statusnya ditampilkan di Serial Monitor. Jika nilai sentuhan tidak mencapai threshold, LED dimatikan, dan statusnya juga ditampilkan di Serial Monitor. Setelah itu, terdapat jeda selama 500 milidetik sebelum membaca kembali nilai sentuhan.
+Bagian ini merupakan loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sentuhan dari pin Touch (GPIO 4) dibaca menggunakan `touchRead(touchPin)`. Nilai tersebut kemudian ditampilkan di Serial Monitor menggunakan `Serial.print()`. Jika nilai sentuhan kurang dari nilai threshold (20), maka LED (GPIO 16) akan berkedip dengan interval 1 detik, dan statusnya ditampilkan di Serial Monitor. Jika nilai sentuhan tidak mencapai threshold, LED dimatikan, dan statusnya juga ditampilkan di Serial Monitor. Setelah itu, terdapat jeda selama 500 milidetik sebelum membaca kembali nilai sentuhan.
    
 <br></br>
 
