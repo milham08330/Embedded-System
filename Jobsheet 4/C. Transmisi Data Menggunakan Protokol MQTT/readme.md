@@ -12,34 +12,36 @@
 
 
 ## 3. Flow Program
-![Flow Program](https://github.com/ArthZ01/System-Embedded/assets/91934953/c94b9604-a98c-4036-9df2-14c0a48a964d)
+
+![flow_job4](https://github.com/milham08330/Embedded-System/assets/42812745/f0cee5a9-c8f2-4eb3-9e08-18496695bea6)
 
 ## 4. Hasil & Pembahasan
 ### Dokumentasi Hasil
 
-1. Flow chart 
+a. Flow chart 
 
-   ![Flow Chart](https://github.com/ArthZ01/System-Embedded/assets/91934953/63f63cb6-2e40-4b09-99ff-3b8c2c7e574b)
+   ![dok_1](https://github.com/milham08330/Embedded-System/assets/42812745/31368e1e-ba1f-472c-9bf5-12e7b628e0b8)
    
-3. Output serial monitor
+b. Output serial monitor
    
-   ![2  Output serial monitor](https://github.com/ArthZ01/System-Embedded/assets/91934953/160587e7-6981-4552-ac6f-e0521c7a23ec)
+   ![dok_2](https://github.com/milham08330/Embedded-System/assets/42812745/93969556-efc6-48d4-b831-2b01a6bf3985)
 
-4. Debug Node-RED
+c. Debug Node-RED
    
-   ![3  Debug Node-RED](https://github.com/ArthZ01/System-Embedded/assets/91934953/2feaf087-a882-402b-b27e-2a4fc712dbce)
+   ![dok_3](https://github.com/milham08330/Embedded-System/assets/42812745/e80de707-c905-467f-8dea-4fe0f02c3075)
    
-5. Dashboard Node-RED
+d. Dashboard Node-RED
 
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/8f6d7a42-4854-496c-a174-496ae3b73e0f" width=80% height=80%>
+   ![dok_4](https://github.com/milham08330/Embedded-System/assets/42812745/7439ccb6-83d2-4724-b8b0-ad233bc2e942)
    
-6. Tabel database MySQL
+5. Tabel database MySQL
    
-   ![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/b6e71433-c1e9-4338-8658-50a975f8fb39)
+   ![dok_5](https://github.com/milham08330/Embedded-System/assets/42812745/9f1e6197-f9e4-4a53-b80e-f0946401972e)
 
 
 ### Source Code
-![Penjelasan Kode](https://github.com/ArthZ01/System-Embedded/assets/91934953/bce2d89a-1422-4f42-99e6-76cb8ad0fb6d)
+
+![code4](https://github.com/milham08330/Embedded-System/assets/42812745/d691490a-86a7-488b-8bee-cb4d3a9a8d89)
 
 ### Pembahasan
 1. Bagian Awal:
