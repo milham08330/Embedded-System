@@ -55,14 +55,14 @@ void loop() {
 
 ## 3. Flowchart
 
-![flowchart](https://github.com/brianrahma/brian-system-embedded/assets/82065700/c17d1699-e415-4569-94d7-4232af6ded0d)
+![flow_a](https://github.com/milham08330/Embedded-System/assets/42812745/2767a81e-a745-4fd7-bfd1-38b264a098cd)
 
 
 ## 4. Hasil dan Pembahasan
 
  **Hasil percobaan :**
  
-![B gif](https://github.com/brianrahma/brian-system-embedded/assets/82065700/ee6728da-75e2-482c-941e-e2a550e82682)
+![hasil_a](https://github.com/milham08330/Embedded-System/assets/42812745/cb949224-eaa1-47fe-b4dd-ce6fb54fd477)
 
 <p align="justify">Pada percobaan ini ESP32 digunakan sebagai client yang terhubung ke jaringan WiFi yang telah ditentukan SSID dan passwordnya pada program. Hasil dari percobaan ini adalah terbentuknya koneksi WiFi antara perangkat ESP32 (client) dan jaringan WiFi yang ditentukan, dengan informasi koneksi yang ditampilkan di Serial Monitor yaitu alamat IP lokal dan nilai RSSI. Nilai RSSI memberikan indikasi kekuatan sinyal WiFi yang diterima, dan ini dapat memberikan informasi tentang seberapa baik atau buruk kualitas koneksi WiFi.</p>
 <br>
