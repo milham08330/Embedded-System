@@ -41,7 +41,8 @@
 
 
 ### Source Code
-<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/eb9d6f11-6eec-48e2-b660-e837d4fae026" height=1000rem>
+
+![job4_1](https://github.com/milham08330/Embedded-System/assets/42812745/fddc467f-10c6-4c76-80b2-4fa22da2a1bf)
 
 ### Pembahasan
 1. Bagian Awal:
@@ -98,22 +99,23 @@ Catatan:
 
 1. Flow chart 
 
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/9c59e274-4da3-4569-a54c-68b341211c1e" height=700rem>
+   ![flow_job4_5](https://github.com/milham08330/Embedded-System/assets/42812745/2ac52550-c68f-4789-9a7a-5c1c1a72f9db)
 
 2. Output serial monitor
  
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/2792706d-a6c1-4e06-8109-b4b315404235" width=80% height=80%>
+   ![job_4_2](https://github.com/milham08330/Embedded-System/assets/42812745/0a88dc17-1deb-48a2-81f1-80a617bc652c)
    
 3. Debug Node-RED
-   
-   ![3  Debug Node-RED](https://github.com/ArthZ01/System-Embedded/assets/91934953/d4095d4f-5805-481c-a097-970f5edfe399)
+
+   ![job_4_3](https://github.com/milham08330/Embedded-System/assets/42812745/211e0a70-ab89-4db0-a41b-fa91ce3acbdb)
    
 4. Dashboard Node-RED
- 
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/69f41a3e-0c2f-4ef1-af93-529e83ef68ed" width=80% height=80%>
+   
+   ![job_4_4](https://github.com/milham08330/Embedded-System/assets/42812745/a764285f-0441-48a6-ae99-dc3367a0475f)
 
 ### Source Code
-<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/6b887c29-1601-4ff9-bd61-bd6825bddcb7" height=1000rem>
+
+![job_4_5](https://github.com/milham08330/Embedded-System/assets/42812745/dc6dde6d-0a71-420d-b6c6-61ad260b7f92)
 
 ### Pembahasan
 
