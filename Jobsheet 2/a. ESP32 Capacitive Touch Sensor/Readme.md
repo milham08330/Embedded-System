@@ -90,7 +90,7 @@ void loop(){
 
 ## Hasil dan Pembahasan
 
-![touch2](https://github.com/alfan459/Embedded-System/assets/54757609/9e2e53b8-c511-4ed6-9958-ffcae10c2c71)
+![Uploading job2_2.gif…]()
 
 Program di atas merupakan contoh penggunaan sensor sentuh pada ESP32 untuk mengontrol LED. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
@@ -152,7 +152,7 @@ void loop(){
 
 ## Hasil dan Pembahasan
 
-![touch3](https://github.com/alfan459/Embedded-System/assets/54757609/f58b84ff-c28f-49a2-9c2a-d803b31ae20f)
+![job2_3](https://github.com/milham08330/Embedded-System/assets/42812745/8d92cd77-7c20-4345-af56-06c13c6459e4)
 
 Program di atas menggunakan sensor sentuh pada pin GPIO4 dan mengontrol LED pada pin GPIO16. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
@@ -326,7 +326,7 @@ void loop(){
 
 ## Hasil dan Pembahasan
 
-![touch5](https://github.com/alfan459/Embedded-System/assets/54757609/faf4252e-1251-406a-8cae-952e32aa6b2e)
+![Uploading job2_5.gif…]()
 
 Program di atas menggunakan sensor sentuh pada pin GPIO4 dan mengontrol tiga buah LED pada pin GPIO16, GPIO17, dan GPIO18. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
