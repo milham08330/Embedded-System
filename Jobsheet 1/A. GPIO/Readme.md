@@ -14,37 +14,37 @@ Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 deti
 
 
 3. Program
-```cpp
-// set pin numbers
-const int buttonPin = 4; // the number of the pushbutton pin
-const int ledPin = 5; // the number of the LED pin
-// variable for storing the pushbutton status 
-int buttonState = 0;
-void setup() {
- Serial.begin(115200); 
- // initialize the pushbutton pin as an input
- pinMode(buttonPin, INPUT);
- // initialize the LED pin as an output
- pinMode(ledPin, OUTPUT);
-}
-void loop() {
- // read the state of the pushbutton value
- buttonState = digitalRead(buttonPin);
- Serial.println(buttonState);
- // check if the pushbutton is pressed.
- // if it is, the buttonState is HIGH
- if (buttonState == HIGH) {
- // turn LED on
- digitalWrite(ledPin, HIGH);
- } else {
- // turn LED off
- digitalWrite(ledPin, LOW);
- }
-}
-```
+   ```cpp
+    // set pin numbers
+     const int buttonPin = 4; // the number of the pushbutton pin
+    const int ledPin = 5; // the number of the LED pin
+    // variable for storing the pushbutton status 
+    int buttonState = 0;
+    void setup() {
+     Serial.begin(115200); 
+     // initialize the pushbutton pin as an input
+     pinMode(buttonPin, INPUT);
+     // initialize the LED pin as an output
+     pinMode(ledPin, OUTPUT);
+        }
+    void loop() {
+     // read the state of the pushbutton value
+     buttonState = digitalRead(buttonPin);
+     Serial.println(buttonState);
+     // check if the pushbutton is pressed.
+     // if it is, the buttonState is HIGH
+     if (buttonState == HIGH) {
+     // turn LED on
+     digitalWrite(ledPin, HIGH);
+     } else {
+     // turn LED off
+     digitalWrite(ledPin, LOW);
+           }
+        }
+   ```
 4. Flowchart
 
-![flow_job1_1](https://github.com/milham08330/Embedded-System/assets/42812745/76c92be9-0c6f-4093-b2f5-2febd8741a2b)
+    ![flow_job1_1](https://github.com/milham08330/Embedded-System/assets/42812745/76c92be9-0c6f-4093-b2f5-2febd8741a2b)
 
 5. Hasil dan Pembahasan
 
@@ -56,7 +56,7 @@ void loop() {
    - LED menyala selama 2 detik dan mati selama 1 detik.
    - LED menyala selama 3 detik dan mati selama 1 detik.
 
-   Pola ini akan terus berulang selama program berjalan di dalam fungsi `loop()`. Fungsi `delay()` digunakan untuk memberikan jeda waktu dalam milidetik antara operasi-operasi tersebut.
+   Pola ini akan terus berulang selama program berjalan di dalam fungsi `loop()`. Fungsi `delay()` digunakan untuk memberikan jeda waktu dalam milidetik.
 
 
 <br></br>
@@ -72,64 +72,50 @@ Program pertama akan digunakan untuk membuat blink 1 detik sekali menggunakan ti
     * Push button       ==> 1 buah
 
 2. Rangkaian
+    ![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/a463a2d8-5739-45a1-96ac-a4eb0641ea41)
 
-    ![image](https://github.com/alfan459/Embedded-System/assets/54757609/4850f38f-859e-461b-a830-cd9b53a8e40e)
 
 3. Program
+```cpp
+  // mengatur posisi PIN
+  const int ledPin = 5;               // LED dihubungkan pada pin GPIO 5
 
-    ![beautify-picture (3)](https://github.com/JustBadrun/Embeded_System/assets/128286595/d5461284-0e4a-48e6-acf5-4b3b2b505d8d)
+  // variable untuk keadaan Led
+  int ledState = LOW;                 // kondisi yang akan digunakan untuk set LED
+  unsigned long previousMillis = 0;   // waktu Led setelah mati
+  const long interval = 1000;         // interval untuk blink (milliseconds)
 
+  void setup() {
+    pinMode(ledPin, OUTPUT);          // Menginisialisasi LED sebagai Output
+    }
+
+  void loop() {
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;                     // Menyimpan waktu terakhir LED ngeblink
+
+    // jika led dalam keadaan mati, maka nyalakan dan sebaliknya
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+
+    // atur nyala atau mati LED sesuai dengan nilai variable ledState
+    digitalWrite(ledPin, ledState);
+        }
+  }
+```
 4. Flowchart
+    ![flow_job1_2](https://github.com/milham08330/Embedded-System/assets/42812745/5ea3ec78-18ee-4a53-8452-5182e667afe2)
 
-    ![Flowchart2](https://github.com/alfan459/Embedded-System/assets/54757609/28954bd9-7499-47e5-b546-ec70c1f35ab9)
 
 5. Hasil dan Pembahasan
 
     ![GPIO 1](https://github.com/alfan459/Embedded-System/assets/54757609/d6d24241-0add-4543-a049-e1a800bf9378)
 
-    Kode di atas merupakan program sederhana untuk mengendalikan LED dengan menggunakan ESP32. Program ini menggunakan konsep *blinking* (nyala-mati secara bergantian) dengan menggunakan fungsi `millis()` untuk mengatur interval waktu. Berikut adalah penjelasan singkat untuk setiap bagian dari kode tersebut:
-
-  * Inisialisasi PIN dan Variabel:
-   ```cpp
-   const int ledPin = 5;      // LED dihubungkan pada pin GPIO 5
-   int ledState = LOW;        // Kondisi yang akan digunakan untuk mengatur LED
-   unsigned long previousMillis = 0;  // Waktu terakhir LED dimatikan
-   const long interval = 1000;        // Interval untuk blinking (milliseconds)
-   ```
-
-   Kode ini menetapkan bahwa LED akan dihubungkan ke pin GPIO 5 dan menginisialisasi variabel `ledState` sebagai `LOW` (mati), `previousMillis` sebagai `0`, dan `interval` sebagai `1000` milidetik (1 detik).
-
-  * Setup:
-   ```cpp
-   void setup() {
-     pinMode(ledPin, OUTPUT);  // Menginisialisasi LED sebagai Output
-   }
-   ```
-
-   Fungsi `setup()` dijalankan sekali pada awal program. Di dalamnya, pin LED diinisialisasi sebagai output.
-
-  * Loop Utama:
-   ```cpp
-   void loop() {
-     unsigned long currentMillis = millis();
-
-     if (currentMillis - previousMillis >= interval) {
-       previousMillis = currentMillis;  // Menyimpan waktu terakhir LED ngeblink
-
-       // Jika LED dalam keadaan mati, maka nyalakan, dan sebaliknya
-       if (ledState == LOW) {
-         ledState = HIGH;
-       } else {
-         ledState = LOW;
-       }
-
-       // Atur nyala atau mati LED sesuai dengan nilai variabel ledState
-       digitalWrite(ledPin, ledState);
-     }
-   }
-   ```
-
-   Bagian ini merupakan loop utama program yang akan terus diulang. Setiap iterasi loop, program akan mengecek apakah sudah waktunya untuk mengubah keadaan LED (nyala atau mati) berdasarkan interval yang telah ditentukan. Fungsi `millis()` digunakan untuk menghitung waktu dalam milidetik sejak program dimulai.
+    Kode di atas merupakan program sederhana untuk mengendalikan LED dengan menggunakan ESP32. Program ini menggunakan konsep *blinking* (nyala-mati secara bergantian) dengan menggunakan fungsi `millis()` untuk mengatur interval waktu. 
 
      - Jika waktu sekarang (`currentMillis`) dikurangi dengan waktu terakhir LED dimatikan (`previousMillis`) lebih besar atau sama dengan interval yang ditentukan, maka:
        - Waktu terakhir LED dimatikan (`previousMillis`) diupdate.
@@ -148,8 +134,7 @@ Program pertama akan digunakan untuk mengendalikan LED menggunakan push button.
     * Push button       ==> 1 buah
 
 2. Rangkaian
-
-    ![image](https://github.com/alfan459/Embedded-System/assets/54757609/4850f38f-859e-461b-a830-cd9b53a8e40e)
+    ![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/ef829f6a-57aa-4afa-8c82-13144c9cbc08)
 
 3. Program
 
@@ -218,8 +203,7 @@ Program pertama akan digunakan untuk mengendalikan LED agar blink setiap 500 ms 
     * Push button       ==> 2 buah
 
 2. Rangkaian
-
-    ![Rangkaian GPIO 4](https://github.com/alfan459/Embedded-System/assets/54757609/389106d1-e4a8-41c3-8bed-ea941e62d3db)
+    ![rangkaian_job1_4](https://github.com/milham08330/Embedded-System/assets/42812745/9517c416-e0b4-446c-a213-e11a1e67b2c4)
 
 3. Program
 
@@ -317,8 +301,7 @@ Program pertama akan digunakan untuk membuat LED menyala bergantian dari kiri ke
     * Push button       ==> 3 buah
 
 2. Rangkaian
-
-    ![Rangkaian GPIO 5](https://github.com/alfan459/Embedded-System/assets/54757609/81dfe4c2-b0fe-4576-8de2-ab5ee3ced849)
+    ![rangkaian_job1_5](https://github.com/milham08330/Embedded-System/assets/42812745/914a0ffc-f63d-4509-8f50-e0f630415fe3)
 
 3. Program
 
