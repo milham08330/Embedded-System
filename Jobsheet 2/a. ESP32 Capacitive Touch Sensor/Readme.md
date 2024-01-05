@@ -156,43 +156,6 @@ void loop(){
 
 Program di atas menggunakan sensor sentuh pada pin GPIO4 dan mengontrol LED pada pin GPIO16. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
-1. **Setup:**
-   ```cpp
-   void setup(){
-     Serial.begin(115200);        // Inisialisasi komunikasi serial dengan baudrate 115200
-     delay(1000);                 // Jeda awal selama 1000 milidetik (1 detik)
-     pinMode (ledPin, OUTPUT);    // Inisialisasi LED sebagai output
-   }
-   ```
-
-   Fungsi `setup()` dijalankan sekali pada awal program. Di dalamnya, komunikasi serial diatur dengan baudrate 115200, terdapat jeda awal selama 1000 milidetik, dan pin LED (GPIO 16) diatur sebagai output.
-
-2. **Loop Utama:**
-   ```cpp
-   void loop(){
-     touchValue = touchRead(touchPin);    // Membaca nilai sentuhan dari pin Touch (GPIO4)
-     Serial.print(touchValue);            // Menampilkan nilai sentuhan ke Serial Monitor
-     
-     // Jika nilai sentuhan kurang dari nilai ambang batas (threshold), maka lampu akan berkedip
-     if(touchValue < threshold){
-       // Menyalakan LED
-       digitalWrite(ledPin, HIGH);
-       delay(1000);
-       // Mematikan LED
-       digitalWrite(ledPin, LOW);
-       delay(1000);
-       Serial.println(" - LED Blink");
-     }
-     // Jika tidak, matikan lampu
-     else{
-       // Mematikan LED
-       digitalWrite(ledPin, LOW);
-       Serial.println(" - LED off");
-     }
-     delay(500);  // Jeda selama 500 milidetik sebelum membaca nilai sentuhan lagi
-   }
-   ```
-
 Loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sentuhan dari pin Touch (GPIO 4) dibaca menggunakan `touchRead(touchPin)`. Nilai tersebut kemudian ditampilkan di Serial Monitor menggunakan `Serial.print()`. Jika nilai sentuhan kurang dari nilai threshold (20), maka LED (GPIO 16) akan berkedip dengan interval 1 detik, dan statusnya ditampilkan di Serial Monitor. Jika nilai sentuhan tidak mencapai threshold, LED dimatikan, dan statusnya juga ditampilkan di Serial Monitor. Setelah itu, terdapat jeda selama 500 milidetik sebelum membaca kembali nilai sentuhan.
 <br></br>
 
