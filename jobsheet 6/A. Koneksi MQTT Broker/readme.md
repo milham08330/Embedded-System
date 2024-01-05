@@ -1,6 +1,6 @@
 # 1. Koneksi MQTT Broker
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan 
 
 Dalam percobaan ini program dibuat untuk dapat melakukan koneksi dengan broker dan dapat menerima pesan atau data antar perangkat.
 
