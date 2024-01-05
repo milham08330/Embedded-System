@@ -2,7 +2,7 @@
 
 ## 1. Rangkaian
 
-<img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/df22b4a6-37f9-4eda-8d9c-644d8d0cfec3" width="500">
+![rangkaian](https://github.com/milham08330/Embedded-System/assets/42812745/917a45ca-42d5-4058-b224-09aaf393e680)
 
 ## 2. Source Code
 
