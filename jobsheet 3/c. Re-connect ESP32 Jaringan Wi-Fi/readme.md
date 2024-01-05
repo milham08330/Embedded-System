@@ -74,12 +74,11 @@ void loop() {
 
 ## 3. Flowchart
 
-![Menghubungkan Kembali (Re-connect) ESP32 dengan Jaringan Wi-Fi](https://github.com/brianrahma/brian-system-embedded/assets/82065700/210e62c2-9e58-4541-a2be-b5aecc71dba3)
+![flow_c](https://github.com/milham08330/Embedded-System/assets/42812745/ef5fe496-02f4-48d6-93c4-f0b9545f4708)
 
 ## 4. Hasil dan Pembahasan
 
  **Hasil percobaan :**
 
- ![](https://github.com/brianrahma/tahunpertama/blob/main/C%20gif.gif)
 
 <p align="justify">Pada percobaan ini mendapatkan pengembangan dari percobaan sebelumnya yakni ESP32 sebagai client dapat re-connect atau menghubungkan kembali ke jaringan WiFi apabila koneksi terputus. Hasilnya jika koneksi WiFi terputus dan telah melewati interval yang ditentukan (30 detik), maka ESP32 akan mencoba untuk menghubungkan WiFi kembali dengan menggunakan fungsi 'WiFi.reconnect()'
