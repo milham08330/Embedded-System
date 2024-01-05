@@ -6,7 +6,6 @@
 
 ## 2. Source Code
 
-Program dapat dilihat <a href="https://github.com/brianrahma/brian-system-embedded/blob/master/jobsheet%203/e.%20Mengirim%20Data%20Sensor%20ke%20Database/program/Mengirim%20Data%20Sensor%20ke%20Database.ino"> disini </a>
 
 ## 3. Flowchart
 
