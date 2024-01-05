@@ -165,13 +165,13 @@ void loop() {
 
 ## 3. Flowchart
 
-![Mengirim Data Sensor ke Database](https://github.com/brianrahma/brian-system-embedded/assets/82065700/30aa664d-7943-4f33-94da-6c1d8f65b824)
+![flow_e](https://github.com/milham08330/Embedded-System/assets/42812745/17917b7f-482d-4e72-b131-e7ac869760f6)
 
 ## 4. Hasil dan Pembahasan
 
  **Hasil percobaan :**
  
- ![E gif](https://github.com/brianrahma/brian-system-embedded/assets/82065700/473f3008-71d7-4885-9fee-72bb42bf24eb)
+![hasil_e](https://github.com/milham08330/Embedded-System/assets/42812745/517336b8-df58-4e24-8c9f-94d3c361503d)
  
  <p align="justify">Percobaan ini merupakan pembuatan server web sederhana pada ESP32 yang dapat memberikan informasi suhu dan kelembapan melalui halaman web. Dalam programnya diperlukan library WiFi, ESPAsyncWebServer, dan Adafruit_Sensor untuk menjalankan fungsi. Untuk membaca suhu dan kelembapan digunakan sebuah sensor DHT11. Hasilnya dapat dilihat pada halaman web dengan mengakses IP Address ESP32 pada browser dan disitu dapat dilihat pemantauan perubahan nilai secara real-time informasi suhu dan kelembapan.
 
