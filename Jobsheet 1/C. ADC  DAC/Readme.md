@@ -10,6 +10,7 @@ Program pertama akan digunakan untuk menampilkan pembacaan potensio.
    ![rangkaian_adc_1](https://github.com/milham08330/Embedded-System/assets/42812745/38ef8233-05a8-4af5-9b84-0aa78445bf20)
 
 4. Program
+
    ```cpp
    // Potentiometer terhubung ke GPIO34 (Analog ADC1_CH6)
      const int potPin = 34;
@@ -29,13 +30,13 @@ Program pertama akan digunakan untuk menampilkan pembacaan potensio.
      }
    ```
    
-5. Flowchart
+6. Flowchart
 
    ![flow_adc_1](https://github.com/milham08330/Embedded-System/assets/42812745/52f10e1b-4500-493e-a6f8-1547e0ff34fd)
 
 7. Hasil dan Pembahasan
 
-      ![ADC DAC 1](https://github.com/alfan459/Embedded-System/assets/54757609/67c66308-4865-4563-86f5-7198c5c76a53)
+     ![hasil1](https://github.com/milham08330/Embedded-System/assets/42812745/f4bcfabd-97ab-4459-8bd3-888427bf87ba)
 
       Program ESP32 di atas membaca nilai analog dari potensiometer yang terhubung ke pin GPIO34 (Analog ADC1_CH6) dan menampilkan nilai tersebut ke Serial Monitor setiap 500 milidetik. Berikut adalah penjelasan untuk setiap bagian dari kode tersebut:
 
@@ -110,7 +111,7 @@ Program pertama akan digunakan untuk menampilkan pembacaan potensio.
 
 7. Hasil dan Pembahasan
 
-      ![ADC DAC 2](https://github.com/alfan459/Embedded-System/assets/54757609/7e356dc6-fb4c-4f21-99e2-f1f4b3849738)
+     ![hasil2](https://github.com/milham08330/Embedded-System/assets/42812745/1a9b6520-34d5-48c3-ac02-dd0cf890d4de)
 
       Program ESP32 di atas membaca nilai analog dari potensiometer yang terhubung ke pin GPIO34 dan mengirimkan nilai tersebut ke LED yang terhubung ke pin GPIO5 menggunakan modul PWM (Pulse Width Modulation). Berikut adalah penjelasan untuk setiap bagian dari kode tersebut:
 
