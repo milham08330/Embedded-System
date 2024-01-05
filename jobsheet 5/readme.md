@@ -8,6 +8,3 @@
 ## Alat dan Bahan
 <p align="justify">Alat dan bahan yang digunakan dalam jobsheet ini yaitu perangkat komputer atau laptop yang terpasang Node-Red
 <br></br>
-
-> [!NOTE]  
-> *Buka folder subjob percobaan untuk melihat laporan percobaan*
