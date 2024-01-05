@@ -6,7 +6,17 @@
 
 ## 2. Source Code
 
-Program dapat dilihat <a href="https://github.com/brianrahma/system-embedded/blob/master/jobsheet%202.1/a.%20Memperoleh%20MAC%20Address%20ESP32%20Receiver/1.%20Memperoleh%20MAC%20Address%20ESP32%20Receiver/mac_address.ino">disini
+```cpp
+#include "WiFi.h"
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.mode(WIFI_MODE_STA);
+  Serial.println(WiFi.macAddress());
+}
+void loop() {
+}
+```
 
 ## 3. Hasil dan Pembahasan
 
