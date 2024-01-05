@@ -1,6 +1,6 @@
 # C. Menggunakan Switch Node
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan 
 
 <p align="justify">Dalam percobaan ini digunakan switch node yang merupakan salah satu node yang umum digunakan di Node-RED untuk mengarahkan alur berdasarkan kondisi tertentu. Node ini dapat digunakan untuk memfilter atau membagi alur berdasarkan nilai variabel atau kondisi tertentu. Switch node disini dikonfigurasi untuk dua kondisi yakni >28 dan <=28.
 
