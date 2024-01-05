@@ -2,7 +2,7 @@
 
 ## 1. Rangkaian
 
-<img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/df22b4a6-37f9-4eda-8d9c-644d8d0cfec3" width="500">
+![rangkaian](https://github.com/milham08330/Embedded-System/assets/42812745/9e5cdf38-216f-42a5-9827-4bcb75740506)
 
 ## 2. Source Code
 
@@ -22,7 +22,7 @@ void loop() {
 
  **Hasil percobaan :**
 
- <img src="https://github.com/brianrahma/system-embedded/assets/82065700/fb43dc71-a008-4110-9d64-ff6c98b3cbc4" width="700">
+![hasil](https://github.com/milham08330/Embedded-System/assets/42812745/630ebc0b-64b5-4b2b-8d80-6e099520c0e5)
 
  
 <p align="justify">Dalam percobaan ini output yang didapat adalah mendapatkan MAC Address dari ESP32 yang dikirim melalui serial monitor. MAC Address yang didapat yaitu C8:F0:9E:F4:32:7C
