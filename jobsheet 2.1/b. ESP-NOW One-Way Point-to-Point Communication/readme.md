@@ -203,17 +203,14 @@ typedef struct struct_message {
 ### D. HASIL PERCOBAAN
  **SENDER**
  
- <img src="https://github.com/brianrahma/system-embedded/assets/82065700/ee92c070-9fb3-4093-9d87-cf48b8585908" width="600"><br>
+![hasil1](https://github.com/milham08330/Embedded-System/assets/42812745/1a38a164-c5e4-4664-a93c-8273f1160141)
  
  **RECEIVER**
  
- <img src="https://github.com/brianrahma/system-embedded/assets/82065700/d989991a-0409-4333-97ac-cb4b9c6e869c" width="600"><br>
+![hasil2](https://github.com/milham08330/Embedded-System/assets/42812745/92b9b32a-6648-42a3-90cb-32a1a72fe209)
 
  **DATA DUMMY DENGAN UKURAN YANG TERBACA OLEH RECEIVER ± 250 BYTE**
 
- <img src="https://github.com/brianrahma/system-embedded/assets/82065700/ed8bb6c4-a8fc-4ca2-b108-6fa27b39e9a9" width="600"><br>
+![hasil3](https://github.com/milham08330/Embedded-System/assets/42812745/5bfdd654-0624-4b0f-b33e-ef57ac0e4c44)
 
- **TABEL PERCOBAAN PENGIRIMAN POINT-TO-POINT DALAM 3 KONDISI**
-   
- <img src="https://github.com/brianrahma/system-embedded/assets/82065700/ab72bf2b-0a6c-4cae-bd10-c6600ad77533" width="600"><br>
  <p align="justify">Melalui percobaan ini dapat diketahui bahwa semakin jauh jangkauan ESP32 receiver maka delay untuk menerima data semakin besar. Berdasarkan tabel diatas dapat dilihat bahwa pengiriman paket berjalan dengan baik dalam segala kondisi. Persentase packet loss adalah 0% dengan keberhasilan pengiriman 100%.
