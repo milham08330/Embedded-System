@@ -8,7 +8,7 @@
    
 ## 3. Hasil Percobaan
 
-![membuat database](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/b3d95ad0-cc21-48cf-93f6-850ebe3fb2c1)
+![job7_a](https://github.com/milham08330/Embedded-System/assets/42812745/895eac2f-77b0-4427-99a5-44780ac16084)
 
 
 <p align="justify">Pada percobaan ini output yang dihasilkan yaitu berupa tabel yang berisi parameter-parameter monitoring seperti time, temp, humi dan lain-lain.
