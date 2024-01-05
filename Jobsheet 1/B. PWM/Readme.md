@@ -11,6 +11,7 @@ Program pertama akan digunakan untuk membuat efek fade pada LED menggunakan PWM.
    ![rangkaian_pwm](https://github.com/milham08330/Embedded-System/assets/42812745/f06fe387-2262-460d-8e81-cc7fe0a2d3c5)
 
 4. Program
+
    ```cpp
    // mengatur pin yang terhubung ke LED
    const int ledPin = 16;            // LED terhubung ke pin GPIO16
@@ -45,14 +46,14 @@ Program pertama akan digunakan untuk membuat efek fade pada LED menggunakan PWM.
        }
      }
    ```
-5. Flowchart
+6. Flowchart
    
    ![flow_pwm_1](https://github.com/milham08330/Embedded-System/assets/42812745/cefb8cf8-0b44-4011-b3c2-f68f924432ef)
 
    
 7. Hasil dan Pembahasan
 
-      ![PWM 1](https://github.com/alfan459/Embedded-System/assets/54757609/2e3cddb3-534b-4b23-aad6-f672326ef669)
+     ![hasil2](https://github.com/milham08330/Embedded-System/assets/42812745/fc12c53c-af0e-4b74-a07e-a194fe43c9c8)
       
      program untuk mengendalikan intensitas cahaya dari sebuah LED menggunakan modul PWM (Pulse Width Modulation) pada ESP32. Berikut adalah penjelasan untuk setiap bagian dari kode tersebut:
 
@@ -117,7 +118,7 @@ Program pertama akan digunakan untuk membuat efek fade pada LED menggunakan PWM.
    
 7. Hasil dan Pembahasan
 
-      ![PWM 2](https://github.com/alfan459/Embedded-System/assets/54757609/68196d0b-b263-49db-af58-069f76adcf67)
+     ![hasil1](https://github.com/milham08330/Embedded-System/assets/42812745/476bbede-9445-4f7a-ba41-8840d4dcb76e)
       
    program untuk mengendalikan intensitas cahaya dari tiga buah LED menggunakan modul PWM pada ESP32. Berikut adalah penjelasan untuk setiap bagian dari kode tersebut:
 
