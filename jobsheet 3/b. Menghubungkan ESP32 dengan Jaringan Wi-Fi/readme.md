@@ -6,8 +6,52 @@
 
 ## 2. Source Code
 
-Program dapat dilihat <a href="https://github.com/brianrahma/brian-system-embedded/blob/master/jobsheet%203/b.%20Menghubungkan%20ESP32%20dengan%20Jaringan%20Wi-Fi/program/ESP32%20connect%20Wi-Fi.ino"> disini </a> atau dibawah ini
-<img src="https://github.com/brianrahma/brian-system-embedded/assets/82065700/9fe36371-4b73-4d26-964d-11cd58cf77f7" width="800">
+```cpp
+#include <WiFi.h>
+
+// Ganti dengan kredensial jaringan Anda (STATION)
+const char* ssid = "P"; // Nama SSID WiFi Anda
+const char* password = "12345678"; // Kata sandi WiFi Anda
+
+// Fungsi untuk menginisialisasi koneksi WiFi
+void initWiFi() {
+  // Mengatur mode WiFi ke mode STA (station)
+  WiFi.mode(WIFI_STA);
+  
+  // Memulai koneksi WiFi dengan SSID dan kata sandi yang telah ditentukan
+  WiFi.begin(ssid, password);
+  
+  // Mencetak pesan "Connecting to WiFi .." ke Serial Monitor
+  Serial.print("Connecting to WiFi ..");
+  
+  // Menunggu hingga koneksi WiFi terhubung
+  while (WiFi.status() != WL_CONNECTED) {
+    Serial.print('.');
+    delay(1000); // Menunggu 1 detik sebelum mencoba lagi
+  }
+  
+  // Mencetak alamat IP lokal yang telah diperoleh
+  Serial.println(WiFi.localIP());
+}
+
+void setup() {
+  // Memulai komunikasi serial dengan baud rate 115200
+  Serial.begin(115200);
+  
+  // Menginisialisasi koneksi WiFi menggunakan fungsi initWiFi()
+  initWiFi();
+  
+  // Mencetak nilai RSSI (Received Signal Strength Indicator) ke Serial Monitor
+  Serial.print("RRSI: ");
+  Serial.println(WiFi.RSSI());
+}
+
+void loop() {
+  // Kode utama Anda akan berjalan berulang kali di sini
+  // Anda dapat menambahkan perintah-perintah yang diperlukan di dalam loop ini
+}
+```
+
 
 ## 3. Flowchart
 
