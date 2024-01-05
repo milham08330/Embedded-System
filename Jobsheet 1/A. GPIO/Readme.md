@@ -425,6 +425,6 @@ Program pertama akan digunakan untuk membuat LED menyala bergantian dari kiri ke
 
   ![gpio5](https://github.com/milham08330/Embedded-System/assets/42812745/68666ee5-02fc-4ee4-adbf-8d1a12ea58b2)
 
-     program untuk mengendalikan beberapa LED (LED1 hingga LED5) menggunakan tiga push button (button1, button2, dan button3) pada platform Arduino atau mikrokontroler sejenis. Berikut adalah penjelasan singkat untuk setiap bagian dari kode tersebut:
+  program untuk mengendalikan beberapa LED (LED1 hingga LED5) menggunakan tiga push button (button1, button2, dan button3) pada platform Arduino atau mikrokontroler sejenis. Berikut adalah penjelasan singkat untuk setiap bagian dari kode tersebut:
 
-     loop utama program yang akan terus diulang. Pada setiap iterasi loop, program membaca kondisi dari button1, button2, dan button3 menggunakan `digitalRead()`. Berdasarkan kondisi tersebut, program menyalakan atau mematikan LED1 sesuai dengan keadaan button1. Selain itu, jika button2 ditekan, kedua LED (LED1 dan LED2) akan melakukan blinking dengan interval 500ms menggunakan variabel `ledState` dan `previousMillis`. Jika button3 ditekan, LED3, LED4, dan LED5 akan melakukan efek running dari kiri ke kanan dan dari kanan ke kiri.
+  loop utama program yang akan terus diulang. Pada setiap iterasi loop, program membaca kondisi dari button1, button2, dan button3 menggunakan `digitalRead()`. Berdasarkan kondisi tersebut, program menyalakan atau mematikan LED1 sesuai dengan keadaan button1. Selain itu, jika button2 ditekan, kedua LED (LED1 dan LED2) akan melakukan blinking dengan interval 500ms menggunakan variabel `ledState` dan `previousMillis`. Jika button3 ditekan, LED3, LED4, dan LED5 akan melakukan efek running dari kiri ke kanan dan dari kanan ke kiri.
