@@ -14,32 +14,33 @@
 
 ## 3. Flow Program
 
-![Flow Program](https://github.com/ArthZ01/System-Embedded/assets/91934953/8481c937-042b-4cde-918c-9d1004649e05)
+![flow4_1](https://github.com/milham08330/Embedded-System/assets/42812745/a9b25cc2-a2e2-4976-b62d-733cdc63d523)
 
 ## 4. Hasil & Penjelasan Percobaan Kontrol Nyala LED Melalui Dashboard Node-RED
 ### Dokumentasi Percobaan
 
-1. Flow chart 
+a. Flow chart 
    
-  ![Flow Program](https://github.com/ArthZ01/System-Embedded/assets/91934953/8481c937-042b-4cde-918c-9d1004649e05)
+   ![flow4_2](https://github.com/milham08330/Embedded-System/assets/42812745/91a0a88e-dfbd-4875-8999-4591f2c19311)
 
-2. Dokumentasi
+b. Dokumentasi
    
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/16a7145a-144a-4b9c-ac4e-87439aff962b" width=40% height=40%>   
+   ![dok1](https://github.com/milham08330/Embedded-System/assets/42812745/46082cd1-d876-4eab-9e78-64b92beb2f7a)
      
-   ![2  Dokumentasi](https://github.com/ArthZ01/System-Embedded/assets/91934953/4dcee22a-5419-4a73-afb0-02c17f310d7b)
+   ![dok11](https://github.com/milham08330/Embedded-System/assets/42812745/a573fbb7-bc45-42cd-b3c7-0dd3636a33a2)
 
-3. Debug Node-RED
+c. Debug Node-RED
    
-   ![3  Debug Node-RED](https://github.com/ArthZ01/System-Embedded/assets/91934953/4904e0bc-3dd9-458f-a78c-08be4a0992a3)
+   ![dok3](https://github.com/milham08330/Embedded-System/assets/42812745/99343b28-b50a-4856-b952-ea73ca4bef24)
 
    
-4. Dashboard Node-RED
+d. Dashboard Node-RED
 
-   <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/c179e801-3906-4354-bca0-46056192e4b9" width=40% height=40%>
+   ![dok4](https://github.com/milham08330/Embedded-System/assets/42812745/3eb2e393-ff7d-4ebb-b5c1-0713874b8bd1)
    
 ### Kode
-<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/ac83a5a1-23e9-4a73-91e6-92d48ff74e64" height=1000rem>
+
+![code4](https://github.com/milham08330/Embedded-System/assets/42812745/6750115b-9c65-4274-839c-f2cd0ceb7f81)
 
 ### Pembahasan
 1. Bagian Awal:
