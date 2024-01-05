@@ -251,8 +251,11 @@ void createWebServer()
    ![dok4_a22](https://github.com/milham08330/Embedded-System/assets/42812745/ae4a65e9-deee-4e14-bff4-461154368cd8)
 
 3. Serial Monitor Setelah Memasukkan SSID dan PASS
-4. 
+   
    ![dok4_a3](https://github.com/milham08330/Embedded-System/assets/42812745/6403924d-a099-4298-b678-4336476e0c83)
+
+   ![dok4_a33](https://github.com/milham08330/Embedded-System/assets/42812745/392b1d7f-9ebe-4812-a0a5-89a5378be27e)
+
 
 5. Serial Monitor Setelah Berhasil Terhubung
    
