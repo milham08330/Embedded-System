@@ -72,7 +72,8 @@ void loop() {
 
  **Hasil percobaan :**
  
-![Uploading hasil_a.gif…]()
+![hasil_a](https://github.com/milham08330/Embedded-System/assets/42812745/4dab6d7e-5a17-4966-be66-06b6aa452449)
+
 
 <p align="justify">Dalam percobaan ini ESP32 akan digunakan untuk melakukan pemindaian (scanning) jaringan WiFi di sekitar perangkat ESP32 menggunakan modul WiFi. Tujuan dari percobaan ini adalah untuk menampilkan daftar jaringan WiFi yang terdeteksi berserta dengan informasi seperti nama SSID, kekuatan sinyal (RSSI), dan apakah jaringan tersebut memiliki enkripsi (WPA/WPA2) atau tidak.
 
