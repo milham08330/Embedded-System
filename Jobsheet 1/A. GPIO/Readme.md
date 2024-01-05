@@ -1,4 +1,4 @@
-![gpio2](https://github.com/milham08330/Embedded-System/assets/42812745/08057aff-336c-4826-a68a-b8bb023f7fe0)# GPIO 1
+# GPIO 1
 Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 detik, 2 detik, dan 3 detik sekali.
 
 1. Alat dan Bahan
@@ -77,6 +77,7 @@ Program pertama akan digunakan untuk membuat blink 1 detik sekali menggunakan ti
 
 
 4. Program
+
 ```cpp
   // mengatur posisi PIN
   const int ledPin = 5;               // LED dihubungkan pada pin GPIO 5
@@ -196,7 +197,8 @@ Program pertama akan digunakan untuk mengendalikan LED agar blink setiap 500 ms 
     ![rangkaian_job1_4](https://github.com/milham08330/Embedded-System/assets/42812745/c65b37c7-0a2f-4987-b6ee-3f32766aa60a)
 
 4. Program
-   ```cpp
+
+    ```cpp
    // mengatur posisi PIN
     const int button1 = 4;  // button1 dihubungkan pada pin GPIO4
     const int button2 = 2;  // button2 dihubungkan pada pin GPIO2
