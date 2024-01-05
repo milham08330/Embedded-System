@@ -1,4 +1,4 @@
-# PWM 1: Example
+# PWM 1
 Program pertama akan digunakan untuk membuat efek fade pada LED menggunakan PWM.
 
 1. Alat dan Bahan
