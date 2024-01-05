@@ -1,4 +1,4 @@
-# GPIO 1
+![gpio2](https://github.com/milham08330/Embedded-System/assets/42812745/08057aff-336c-4826-a68a-b8bb023f7fe0)# GPIO 1
 Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 detik, 2 detik, dan 3 detik sekali.
 
 1. Alat dan Bahan
@@ -115,7 +115,7 @@ Program pertama akan digunakan untuk membuat blink 1 detik sekali menggunakan ti
 
 6. Hasil dan Pembahasan
 
-    ![GPIO 1](https://github.com/alfan459/Embedded-System/assets/54757609/d6d24241-0add-4543-a049-e1a800bf9378)
+    ![gpio2](https://github.com/milham08330/Embedded-System/assets/42812745/7572499e-0a61-4922-9783-406625d358e7)
 
     Kode di atas merupakan program sederhana untuk mengendalikan LED dengan menggunakan ESP32. Program ini menggunakan konsep *blinking* (nyala-mati secara bergantian) dengan menggunakan fungsi `millis()` untuk mengatur interval waktu. 
 
@@ -176,7 +176,7 @@ Program pertama akan digunakan untuk mengendalikan LED menggunakan push button.
 
 7. Hasil dan Pembahasan
 
-    ![GPIO 3](https://github.com/alfan459/Embedded-System/assets/54757609/ea07038b-8f00-4882-8bbf-3fa435e164d7)
+    ![gpio3](https://github.com/milham08330/Embedded-System/assets/42812745/cecc5452-51aa-4b54-8af9-24224ae0f303)
 
    Berdasarkan nilai `buttonState`, program memutuskan apakah push button ditekan atau tidak. Jika `buttonState` bernilai `HIGH`, artinya push button ditekan, maka program akan menyalakan LED dengan menggunakan `digitalWrite(ledPin, HIGH)`. Jika tidak ditekan, maka LED dimatikan dengan menggunakan `digitalWrite(ledPin, LOW)`.
 <br></br>
@@ -265,7 +265,7 @@ Program pertama akan digunakan untuk mengendalikan LED agar blink setiap 500 ms 
 
 7. Hasil dan Pembahasan
 
-    ![GPIO 4](https://github.com/alfan459/Embedded-System/assets/54757609/5c06b0e8-8ff4-441a-baa4-7ff00b3c4a38)
+    ![gpio4](https://github.com/milham08330/Embedded-System/assets/42812745/96144037-3df3-4b6a-8741-8c6b028af82f)
 
    program untuk mengendalikan dua LED (LED1 dan LED2) menggunakan dua push button (button1 dan button2) pada ESP32. Berikut adalah penjelasan singkat untuk setiap bagian dari kode tersebut:
 
@@ -423,7 +423,7 @@ Program pertama akan digunakan untuk membuat LED menyala bergantian dari kiri ke
 
 7. Hasil dan Pembahasan
 
-    ![GPIO 5](https://github.com/alfan459/Embedded-System/assets/54757609/e9fa7683-f447-4b10-9758-9ef9b0d55a98)
+  ![gpio5](https://github.com/milham08330/Embedded-System/assets/42812745/68666ee5-02fc-4ee4-adbf-8d1a12ea58b2)
 
      program untuk mengendalikan beberapa LED (LED1 hingga LED5) menggunakan tiga push button (button1, button2, dan button3) pada platform Arduino atau mikrokontroler sejenis. Berikut adalah penjelasan singkat untuk setiap bagian dari kode tersebut:
 
