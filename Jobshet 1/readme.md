@@ -14,8 +14,33 @@
 <br>![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/6331087e-8f68-4a7f-ad8a-31dec91569ff)
 
 <br>3. Program
-<br>![Program GPIO](https://github.com/milham08330/Embedded-System/assets/42812745/e34f17fb-5bb4-496d-8a7f-cf48a033c28b)
-
+```// set pin numbers
+const int buttonPin = 4; // the number of the pushbutton pin
+const int ledPin = 5; // the number of the LED pin
+// variable for storing the pushbutton status 
+int buttonState = 0;
+void setup() {
+ Serial.begin(115200); 
+ // initialize the pushbutton pin as an input
+ pinMode(buttonPin, INPUT);
+ // initialize the LED pin as an output
+ pinMode(ledPin, OUTPUT);
+}
+void loop() {
+ // read the state of the pushbutton value
+ buttonState = digitalRead(buttonPin);
+ Serial.println(buttonState);
+ // check if the pushbutton is pressed.
+ // if it is, the buttonState is HIGH
+ if (buttonState == HIGH) {
+ // turn LED on
+ digitalWrite(ledPin, HIGH);
+ } else {
+ // turn LED off
+ digitalWrite(ledPin, LOW);
+ }
+}
+```
 <br>4. Hasil 
 <br>Led blink 1 detik 
 
@@ -37,8 +62,34 @@ https://github.com/milham08330/Embedded-System/assets/42812745/e370cf18-5670-4bf
 <br>![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/6331087e-8f68-4a7f-ad8a-31dec91569ff)
 
 <br>3. Program
-<br>![GPIO 2](https://github.com/milham08330/Embedded-System/assets/42812745/be992475-e98f-4d1a-baed-74568e4d0928)
-
+```// the number of the LED pin
+const int ledPin = 16; // 16 corresponds to GPIO16
+// setting PWM properties
+const int freq = 5000;
+const int ledChannel = 0; //PWM Channel
+const int resolution = 8; //resolution bit
+void setup(){
+ // configure LED PWM functionalitites
+ ledcSetup(ledChannel, freq, resolution);
+ 
+ // attach the channel to the GPIO to be controlled
+ ledcAttachPin(ledPin, ledChannel);
+}
+void loop(){
+ // increase the LED brightness
+for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){ 
+ // changing the LED brightness with PWM
+ ledcWrite(ledChannel, dutyCycle);
+ delay(15);
+ }
+ // decrease the LED brightness
+ for(int dutyCycle = 255; dutyCycle >= 0; dutyCycle--){
+ // changing the LED brightness with PWM
+ ledcWrite(ledChannel, dutyCycle); 
+ delay(15);
+ }
+}
+```
 <br>4. Hasil 
 <br>Led Push Button
 
@@ -60,8 +111,39 @@ https://github.com/milham08330/Embedded-System/assets/42812745/82c7801a-64d3-4b1
 <br>![gpio](https://github.com/milham08330/Embedded-System/assets/42812745/6331087e-8f68-4a7f-ad8a-31dec91569ff)
 
 <br>3. Program
-<br>![GPIO 2](https://github.com/milham08330/Embedded-System/assets/42812745/3ae6a033-9e51-4deb-8b65-71ce366ab55a)
-
+```
+// the number of the LED pin
+const int ledPin = 16; // 16 corresponds to GPIO16
+const int ledPin2 = 17; // 17 corresponds to GPIO17
+const int ledPin3 = 5; // 5 corresponds to GPIO5
+// setting PWM properties
+const int freq = 5000;
+const int ledChannel = 0;
+const int resolution = 8;
+void setup(){
+ // configure LED PWM functionalitites
+ ledcSetup(ledChannel, freq, resolution);
+ 
+ // attach the channel to the GPIO to be controlled
+ ledcAttachPin(ledPin, ledChannel);
+ ledcAttachPin(ledPin2, ledChannel);
+ ledcAttachPin(ledPin3, ledChannel);
+}
+void loop(){
+ // increase the LED brightness
+ for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){ 
+ // changing the LED brightness with PWM
+edcWrite(ledChannel, dutyCycle);
+ delay(15);
+ }
+ // decrease the LED brightness
+ for(int dutyCycle = 255; dutyCycle >= 0; dutyCycle--){
+ // changing the LED brightness with PWM
+ ledcWrite(ledChannel, dutyCycle); 
+ delay(15);
+ }
+}
+```
 <br>4. Hasil 
 <br>Led Push Button 
 
