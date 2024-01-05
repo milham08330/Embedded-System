@@ -29,6 +29,7 @@
 
 ### C. Hasil dan Pembahasan
 
-![Uploading hasil3.gif…]()
+![hasil3](https://github.com/milham08330/Embedded-System/assets/42812745/ebb9bf5a-6947-4504-849b-fe2507c7ae48)
+
 
 <p align="justify">Pada percobaan ini masih sama dengan sebelumnya, yaitu menggunakan 1 ESP yang bertindak sebagai Master/sender dan 3 ESP bertindak sebagai receiver. Perbedaannya terdapat pada data yang dikirimkan ke masing-masing receiver tidak sama. Receiver 1 akan mendapatkan data yang berisi variabel dengan tipe data integer, receiver 2 mendapatkan data variabel dengan tipe data float, dan receiver 3 mendapatkan data variabel dengan tipe data string.
