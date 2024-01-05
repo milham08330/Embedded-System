@@ -1,4 +1,4 @@
-<h1 align="">GPIO</h1>
+<h1 align="">GPIO 1</h1>
 <h1 align="">A. Program pertama akan digunakan untuk membuat blink dengan interval 100ms, 1 detik, 2 detik, dan 3 detik sekali.</h1>
 
 <h3>1. Alat dan Bahan</h3>
@@ -14,7 +14,39 @@ Push button ==> 1 buah
 
 <h3>3. Program</h3>
 
-![Program GPIO](https://github.com/milham08330/Embedded-System/assets/42812745/e34f17fb-5bb4-496d-8a7f-cf48a033c28b)
+```
+// set pin numbers
+const int buttonPin = 4; // the number of the pushbutton pin
+const int ledPin = 5; // the number of the LED pin
+
+// variable for storing the pushbutton status 
+int buttonState = 0;
+void setup() {
+ Serial.begin(115200); 
+ // initialize the pushbutton pin as an input
+ pinMode(buttonPin, INPUT);
+ // initialize the LED pin as an output
+ pinMode(ledPin, OUTPUT);
+}
+void loop() {
+ // read the state of the pushbutton value
+ buttonState = digitalRead(buttonPin);
+ Serial.println(buttonState);
+ // check if the pushbutton is pressed.
+ // if it is, the buttonState is HIGH
+ if (buttonState == HIGH) {
+ // turn LED on
+ digitalWrite(ledPin, HIGH);
+ } else {
+ // turn LED off
+ digitalWrite(ledPin, LOW);
+ }
+}
+```
+
+<h3>4. Flowchart</h3>
+![flow_job1_1](https://github.com/milham08330/Embedded-System/assets/42812745/72ad482b-95e1-4648-8a90-035f25596f61)
+
 
 <h3>4. Hasil</h3>
 
@@ -22,10 +54,6 @@ Led blink 1 detik
 
 
 https://github.com/milham08330/Embedded-System/assets/42812745/e370cf18-5670-4bf8-914d-22fd5ce3b6d1
-
-<h3>5. Analisa</h3>
-
-
 
 
 <h1 align="">B. Program LED dapat blink 1 detik sekali menggunakan timer milis()</h1>
