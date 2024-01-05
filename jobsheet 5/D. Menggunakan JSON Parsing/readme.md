@@ -1,6 +1,6 @@
 # D. Menggunakan JSON Parsing
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan
 
 <p align="justify">Dalam percobaan ini digunakan JSON node yang dapat digunakan untuk melakukan parsing (mengurai) data JSON. Di Node-RED, JSON parsing digunakan untuk mengonversi data dalam format JSON menjadi objek JavaScript atau sebaliknya.
 
