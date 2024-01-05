@@ -1,6 +1,6 @@
 # B. Menerima Data JSON Melalui Protokol MQTT
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan
 
 Dalam percobaan ini program dibuat untuk dapat menerima pesan atau data antara perangkat dimana data yang diterima berupa JSON.
 
