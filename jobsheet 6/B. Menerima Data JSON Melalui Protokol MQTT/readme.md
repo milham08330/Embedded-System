@@ -11,7 +11,8 @@ Dalam percobaan ini program dibuat untuk dapat menerima pesan atau data antara p
 ## 3. Hasil dan Pembahasan
 
 ### Hasil Percobaan
-![1  Flow pemrosesan data JSON melalui protokol MQTT](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/11d94dd2-16c2-448e-89a8-ee3dce4c2772)
+
+![hasil_6b_1](https://github.com/milham08330/Embedded-System/assets/42812745/a4d05b07-61aa-4364-bec5-99834e10e095)
 
 <p align="justify">Outputnya yang dihasilkan yaitu 30 yang merupakan output dari humi. Untuk menerima data JSON melalui protokol MQTT biasanya melibatkan implementasi dari dua fungsi callback utama: on_connect dan on_message. 
 Fungsi on_connect dipanggil saat koneksi ke broker berhasil dibuat. Pada contoh ini, fungsi ini mengatur subscribe ke topik "topik/json" setelah berhasil terhubung.  Fungsi callback on_message untuk menanggapi setiap kali pesan diterima dari broker MQTT.  Dalam fungsi ini,  dapat menguraikan dan memproses data JSON dari payload pesan.
@@ -19,7 +20,8 @@ Fungsi on_connect dipanggil saat koneksi ke broker berhasil dibuat. Pada contoh 
 ## 4. Pengembangan 
 
 ### Hasil Percobaan
-![2  pengembangan](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/56ea5776-0210-45b7-8b85-18951c138cad)
+
+![hasil_6b_2](https://github.com/milham08330/Embedded-System/assets/42812745/75a6f518-a5c2-4917-afbe-3003869e4c12)
 
 <p align="justify">Mempunyai 2 input (Inject Node). Input pertama sama seperti pada percobaan diatas, Sementara Input yang lain menggunakan topic
 kitchen/sensors, dengan jenis sensor flame : 0 , metane : 0, temp : 24, humi :38. Output yang dihasilkan tertampil dalam log yang berbeda. 
