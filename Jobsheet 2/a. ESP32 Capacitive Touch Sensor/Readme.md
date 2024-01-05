@@ -6,7 +6,7 @@ Program pertama akan digunakan untuk menampilkan pembacaan sensor touch ESP32.
 
 ## Rangkaian
 
-![image](https://github.com/alfan459/Embedded-System/assets/54757609/f172e71d-7663-476e-b929-b32ce02d00b5)
+![rangkaian_job2_a1](https://github.com/milham08330/Embedded-System/assets/42812745/d9590fac-d005-4c5d-ad1d-6041509b2aa3)
 
 ## Program
 ```cpp
@@ -22,7 +22,7 @@ Program pertama akan digunakan untuk menampilkan pembacaan sensor touch ESP32.
 ```
 ## Flowchart
 
-![Flowchart 1](https://github.com/alfan459/Embedded-System/assets/54757609/94fcdd67-e4f3-4228-8b80-c2f623d2e039)
+![flow_job2_a1](https://github.com/milham08330/Embedded-System/assets/42812745/e6522ae5-1d1b-4566-bbe3-073cf95899fd)
 
 ## Hasil dan Pembahasan
 
@@ -64,15 +64,48 @@ Program kedua digunakan untuk mengatur kondisi LED menyala atau tidak melalui se
 
 ## Rangkaian
 
-![image](https://github.com/alfan459/Embedded-System/assets/54757609/1eaff866-7a60-478d-a3d5-e373569772c9)
+![rangkaian_job2_a1](https://github.com/milham08330/Embedded-System/assets/42812745/0032b14c-32a5-4132-ab0b-b0e63d47ecc8)
 
 ## Program
+```cpp
+// Mengatur pin
+const int touchPin = 4;        // Pin Touch yakni di GPIO4    
+const int ledPin = 16;         // Pin LED dihubungkan pada GPIO16
 
-![beautify-picture (4)](https://github.com/JustBadrun/Embeded_System/assets/128286595/eb0505a6-05da-4873-93c8-4f8a29b6683d)
+const int threshold = 20;      // mengatur nilai treshold 
+int touchValue;                // variable untuk menympan nilai touch pin
 
+void setup(){
+  Serial.begin(115200);        // komunikasi serial diatur pada baudrate 115200 
+  delay(1000);                 // delay awal 
+  pinMode (ledPin, OUTPUT);    // inisialisasi LED sebagai output
+}
+
+void loop(){
+  touchValue = touchRead(touchPin);    // membaca nilai touch
+  Serial.print(touchValue);            // menampilkan nilai touch ke serial monitor
+  
+  // Jika nilai touch lebih kecil dari nilai treshold, maka lampu akan blink
+  if(touchValue < threshold){
+    // turn LED on
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+    digitalWrite(ledPin, LOW);
+    delay(1000);
+    Serial.println(" - LED Blink");
+  }
+  // Jika tidak, matikan lampu
+  else{
+    // turn LED off
+    digitalWrite(ledPin, LOW);
+    Serial.println(" - LED off");
+  }
+  delay(500);
+}
+```
 ## Flowchart
 
-![Flowchart 2](https://github.com/alfan459/Embedded-System/assets/54757609/96206f0e-a708-43ae-a224-9af7bbf7c080)
+![flow_job2_a2](https://github.com/milham08330/Embedded-System/assets/42812745/a137eca0-90ec-4886-bb3e-ab7ac0a6b572)
 
 ## Hasil dan Pembahasan
 
