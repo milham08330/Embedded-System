@@ -7,6 +7,7 @@ Program pertama akan digunakan untuk membuat efek fade pada LED menggunakan PWM.
       * Resistor 220 Ohm  ==> 3 buah
 
 2. Rangkaian
+   
    ![rangkaian_pwm](https://github.com/milham08330/Embedded-System/assets/42812745/f06fe387-2262-460d-8e81-cc7fe0a2d3c5)
 
 4. Program
@@ -45,6 +46,7 @@ Program pertama akan digunakan untuk membuat efek fade pada LED menggunakan PWM.
      }
    ```
 5. Flowchart
+   
    ![flow_pwm_1](https://github.com/milham08330/Embedded-System/assets/42812745/cefb8cf8-0b44-4011-b3c2-f68f924432ef)
 
    
@@ -56,7 +58,7 @@ Program pertama akan digunakan untuk membuat efek fade pada LED menggunakan PWM.
 
      Pada setiap iterasi loop, intensitas cahaya LED secara perlahan ditingkatkan dari nilai duty cycle 0 hingga 255 menggunakan loop pertama. Setelah mencapai nilai maksimum, intensitas cahaya kemudian dikurangi dari 255 hingga 0 menggunakan loop kedua. Delay 15ms diatur antara setiap perubahan nilai duty cycle untuk memberikan efek perubahan intensitas cahaya yang halus.
 
-Dengan menggunakan modul PWM, program ini dapat menghasilkan efek fading atau perubahan intensitas cahaya secara gradual pada LED yang terhubung ke pin GPIO16.
+     Dengan menggunakan modul PWM, program ini dapat menghasilkan efek fading atau perubahan intensitas cahaya secara gradual pada LED yang terhubung ke pin GPIO16.
 <br></br>
 
 # PWM 2: Pengendalian 3 LED dengan Satu Channel PWM
