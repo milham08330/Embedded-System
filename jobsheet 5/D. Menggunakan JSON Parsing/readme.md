@@ -12,6 +12,6 @@ Laptop yang terpasang Node-Red
 
 ### Hasil Percobaan
 
-<img src="https://github.com/brianrahma/brian-system-embedded/blob/master/jobsheet%205/D.%20Menggunakan%20JSON%20Parsing/Flow%20JSON%20Parser.png" width="600">
+![hasil_5d](https://github.com/milham08330/Embedded-System/assets/42812745/50e84851-c020-4832-b6f8-e441faf5e32a)
 
 <p align="justify">Pada percobaan ini terdapat input data JSON yaitu {"temp":27,"humidity":50}. Lalu input tersebut diarahkan ke node JSON untuk mengurai payload pesan. Setelah diurai (parsing), diarahkan ke node function yang diberi program untuk mengambil nilai suhu (temp) atau nilai kelembapan (humidity) dari objek JSON yang sudah di-parse dan menetapkannya sebagai nilai baru dan diatur sebagai payload pesan. Dengan ini maka outputnya akan tampil pada node debug yakni 27 atau 50 sesuai dengan program yang ditetapkan di node function.
