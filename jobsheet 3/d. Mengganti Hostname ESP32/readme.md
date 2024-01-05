@@ -58,12 +58,12 @@ void loop() {
 
 ## 3. Flowchart
 
-![Mengganti Hostname ESP32](https://github.com/brianrahma/brian-system-embedded/assets/82065700/e07dcb5f-40ee-4ab6-8fac-d9cc19aee2c2)
+![flow_d](https://github.com/milham08330/Embedded-System/assets/42812745/3cef1e80-c9c3-479f-b145-51b9cbb80ced)
 
 ## 4. Hasil dan Pembahasan
 
  **Hasil percobaan :**
  
-![D gif](https://github.com/brianrahma/brian-system-embedded/assets/82065700/6efe61bb-4b97-4a25-84f8-cba396d183f9)
+![hasil_d](https://github.com/milham08330/Embedded-System/assets/42812745/c6406059-d3b7-4387-b3f4-7479b9145cec)
 
 <p align="justify">Pada percobaan ini ESP32 akan terhubung dengan WiFi yang SSID dan kata sandinya telah diatur, serta mengatur dan menetapkan sebuah hostname khusus. Hasil dari percobaan ini dapat dilihat pada serial monitor, dapat dilihat disitu akan tampil alamat IP yang diperoleh, nilai RSSI, dan hostname baru yang telah ditetapkan sebelumnya menggunakan fungsi  `WiFi.getHostname()`.
