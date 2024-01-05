@@ -10,13 +10,17 @@
 ## 3. Hasil Percobaan
 
 1. Hasil Basic flow transmisi data menggunakan protokol HTTP
-   ![1  Hasil Basic flow transmisi data menggunakan protokol HTTP](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/e43c85f5-d490-462b-acff-085e52f4cade)
+
+![job7_b1](https://github.com/milham08330/Embedded-System/assets/42812745/2bfaa7af-08c1-45c4-8bd3-87d0d08fb2da)
 
 2. Hasil Flow program transmisi data pada protokol HTTP dengan respons OK
-   ![1  Hasil Flow program transmisi data pada protokol HTTP dengan respons OK](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/7f986f5f-f850-4ed6-95d8-1a3ca66224a9)
+
+![job7_b2](https://github.com/milham08330/Embedded-System/assets/42812745/93acc97c-0c5c-4ba5-959d-67e97140a4b5)
 
 3. Hasil Flow program transmisi data pada protokol HTTP dengan respons BAD
-   ![2  Hasil Flow program transmisi data pada protokol HTTP dengan respons BAD](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/fc75c973-f5bb-44ba-a5c0-b8017237a648)
+
+![job7_b3](https://github.com/milham08330/Embedded-System/assets/42812745/8db8a0d7-65cb-42f4-aa9b-075cb31643c4)
 
 4. Hasil Flow program untuk parsing data JSON
-   ![2  hasil Flow program untuk parsing data JSON](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/dd7c2d39-305a-4685-87b5-b9bb1ec4b694)
+
+![job7_b4](https://github.com/milham08330/Embedded-System/assets/42812745/bb2a6f67-dc38-4af1-b062-3f08a8bc22c8)
