@@ -1,6 +1,6 @@
 # C. Mengirim Data JSON ke Server dan Menyimpannya ke Database
 
-## 1. Keterangan Singkat (Abstrak)
+## 1. Keterangan 
 <p align="justify">Pada percobaan ini melibatkan penggunaan Node-RED untuk membuat program yang dapat mengirim data JSON ke server dan menyimpannya di dalam database. Setelah mendeploy program, data JSON dapat dikirimkan menggunakan Postman, dan hasilnya dapat diverifikasi melalui node Debug di Node-RED untuk memastikan pengiriman dan penyimpanan data telah berhasil.
 
 ## 2. Alat dan Bahan
