@@ -9,9 +9,17 @@ Program pertama akan digunakan untuk menampilkan pembacaan sensor touch ESP32.
 ![image](https://github.com/alfan459/Embedded-System/assets/54757609/f172e71d-7663-476e-b929-b32ce02d00b5)
 
 ## Program
-
-![beautify-picture (3)](https://github.com/JustBadrun/Embeded_System/assets/128286595/f660db38-9ba6-442f-8be5-060c76f1175c)
-
+```cpp
+   void setup() {
+     Serial.begin(115200);     // komunikasi serial diatur pada baudrate 115200 
+     delay(1000);              // delay awal 
+     Serial.println("ESP32 Touch Test");
+   }
+   void loop() {
+     Serial.println(touchRead(4));  //mendapatkan nilai dari Touch 0 pin = GPIO 4
+     delay(1000);
+   }
+```
 ## Flowchart
 
 ![Flowchart 1](https://github.com/alfan459/Embedded-System/assets/54757609/94fcdd67-e4f3-4228-8b80-c2f623d2e039)
