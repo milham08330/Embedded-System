@@ -109,7 +109,7 @@ Program ini digunakan untuk menyalakan LED secara blink ketika sensor touch dise
 
 ## Rangkaian
 
-![image](https://github.com/alfan459/Embedded-System/assets/54757609/1eaff866-7a60-478d-a3d5-e373569772c9)
+![rangkaian_job2_a1](https://github.com/milham08330/Embedded-System/assets/42812745/c7cd12bc-6393-4e0c-8438-173730a677b7)
 
 ## Program
 
@@ -117,7 +117,7 @@ Program ini digunakan untuk menyalakan LED secara blink ketika sensor touch dise
 
 ## Flowchart
 
-![Flowchart 3](https://github.com/alfan459/Embedded-System/assets/54757609/6a8936ef-da54-4475-91cd-f63e896309a0)
+![flow_job2_a3](https://github.com/milham08330/Embedded-System/assets/42812745/b4354562-1bae-440f-96ac-fb985a44f55f)
 
 ## Hasil dan Pembahasan
 
@@ -162,7 +162,7 @@ Program di atas menggunakan sensor sentuh pada pin GPIO4 dan mengontrol LED pada
    }
    ```
 
-   Bagian ini merupakan loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sentuhan dari pin Touch (GPIO 4) dibaca menggunakan `touchRead(touchPin)`. Nilai tersebut kemudian ditampilkan di Serial Monitor menggunakan `Serial.print()`. Jika nilai sentuhan kurang dari nilai threshold (20), maka LED (GPIO 16) akan berkedip dengan interval 1 detik, dan statusnya ditampilkan di Serial Monitor. Jika nilai sentuhan tidak mencapai threshold, LED dimatikan, dan statusnya juga ditampilkan di Serial Monitor. Setelah itu, terdapat jeda selama 500 milidetik sebelum membaca kembali nilai sentuhan.
+Loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sentuhan dari pin Touch (GPIO 4) dibaca menggunakan `touchRead(touchPin)`. Nilai tersebut kemudian ditampilkan di Serial Monitor menggunakan `Serial.print()`. Jika nilai sentuhan kurang dari nilai threshold (20), maka LED (GPIO 16) akan berkedip dengan interval 1 detik, dan statusnya ditampilkan di Serial Monitor. Jika nilai sentuhan tidak mencapai threshold, LED dimatikan, dan statusnya juga ditampilkan di Serial Monitor. Setelah itu, terdapat jeda selama 500 milidetik sebelum membaca kembali nilai sentuhan.
 <br></br>
 
 # ESP32 TOUCH 4: Touchsensor Count
@@ -175,7 +175,7 @@ Program ini digunakan untuk menampilkan nilai yang terus bertambah pada serial m
 
 ## Rangkaian
 
-![image](https://github.com/alfan459/Embedded-System/assets/54757609/1eaff866-7a60-478d-a3d5-e373569772c9)
+![rangkaian_job2_a1](https://github.com/milham08330/Embedded-System/assets/42812745/cd5a7745-691f-4afb-be98-0666e92d3ed2)
 
 ## Program
 
@@ -183,7 +183,7 @@ Program ini digunakan untuk menampilkan nilai yang terus bertambah pada serial m
 
 ## Flowchart
 
-![Flowchart 4](https://github.com/alfan459/Embedded-System/assets/54757609/d12c3870-5c53-40cd-9eef-bdd5f421809b)
+![flow_job2_a4](https://github.com/milham08330/Embedded-System/assets/42812745/263fe374-81ef-437f-b28c-a02bb286d2c5)
 
 ## Hasil dan Pembahasan
 
@@ -191,41 +191,7 @@ https://github.com/alfan459/Embedded-System/assets/54757609/505c5c47-1b4f-40c5-8
 
 Program di atas menggunakan sensor sentuh pada pin GPIO4 dan mengontrol LED pada pin GPIO2. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
-1. **Setup:**
-   ```cpp
-   void setup() {
-     Serial.begin(115200);   // Inisialisasi komunikasi serial dengan baudrate 115200
-     pinMode(ledPin, OUTPUT); // Inisialisasi pin LED (GPIO2) sebagai output
-     pinMode(touchPin, INPUT); // Inisialisasi pin sensor sentuh (GPIO4) sebagai input
-   }
-   ```
-
-   Fungsi `setup()` dijalankan sekali pada awal program. Di dalamnya, komunikasi serial diatur dengan baudrate 115200, pin LED (GPIO2) diatur sebagai output, dan pin sensor sentuh (GPIO4) diatur sebagai input.
-
-2. **Loop Utama:**
-   ```cpp
-   void loop() {
-     if (digitalRead(touchPin) == HIGH) {
-       // Jika sensor sentuh disentuh, tambahkan 1 ke touchCount
-       touchCount++;
-       
-       // Hidupkan LED
-       digitalWrite(ledPin, HIGH);
-   
-       // Tampilkan touchCount di Serial Monitor
-       Serial.print("Sentuhan ke-");
-       Serial.println(touchCount);
-       
-       // Tunggu sebentar untuk menghindari deteksi berulang
-       delay(500);
-     } else {
-       // Matikan LED jika sensor tidak disentuh
-       digitalWrite(ledPin, LOW);
-     }
-   }
-   ```
-
-   Bagian ini merupakan loop utama program yang akan terus diulang. Pada setiap iterasi loop, kondisi dari sensor sentuh (GPIO4) dibaca menggunakan `digitalRead(touchPin)`. Jika kondisi tersebut adalah `HIGH` (sensor sentuh disentuh), maka `touchCount` akan ditambah 1, LED (GPIO2) akan dinyalakan, dan informasi mengenai jumlah sentuhan akan ditampilkan di Serial Monitor. Setelah itu, terdapat jeda selama 500 milidetik untuk menghindari deteksi berulang. Jika kondisi sensor sentuh adalah `LOW` (tidak disentuh), LED dimatikan.
+Loop utama program yang akan terus diulang. Pada setiap iterasi loop, kondisi dari sensor sentuh (GPIO4) dibaca menggunakan `digitalRead(touchPin)`. Jika kondisi tersebut adalah `HIGH` (sensor sentuh disentuh), maka `touchCount` akan ditambah 1, LED (GPIO2) akan dinyalakan, dan informasi mengenai jumlah sentuhan akan ditampilkan di Serial Monitor. Setelah itu, terdapat jeda selama 500 milidetik untuk menghindari deteksi berulang. Jika kondisi sensor sentuh adalah `LOW` (tidak disentuh), LED dimatikan.
 <br></br>
 
 # ESP32 TOUCH 5: Touchsensor & Running LED
@@ -238,15 +204,14 @@ Program ini digunakan untuk menyalakan LED secara running dari kiri ke kanan ket
 
 ## Rangkaian
 
-![rangkaian5](https://github.com/alfan459/Embedded-System/assets/54757609/61b78942-b317-4169-bea8-0e518f47d3df)
+![rangkaian_job2_a5](https://github.com/milham08330/Embedded-System/assets/42812745/74dfc55a-121c-4150-bd92-0fc5c222be26)
 
 ## Program
 
-![beautify-picture (7)](https://github.com/JustBadrun/Embeded_System/assets/128286595/a4929644-317e-4d0e-876f-66118dca75d0)
 
 ## Flowchart
 
-![Flowchart 4](https://github.com/alfan459/Embedded-System/assets/54757609/d12c3870-5c53-40cd-9eef-bdd5f421809b)
+![flow_job2_a5](https://github.com/milham08330/Embedded-System/assets/42812745/df2f000a-dc66-46c2-a23b-c00daf9c42d6)
 
 ## Hasil dan Pembahasan
 
@@ -254,43 +219,7 @@ Program ini digunakan untuk menyalakan LED secara running dari kiri ke kanan ket
 
 Program di atas menggunakan sensor sentuh pada pin GPIO4 dan mengontrol tiga buah LED pada pin GPIO16, GPIO17, dan GPIO18. Berikut adalah penjelasan singkat mengenai kode tersebut:
 
-1. **Setup:**
-   ```cpp
-   void setup() {
-     Serial.begin(115200);   // Inisialisasi komunikasi serial dengan baudrate 115200
-     delay(1000);            // Delay awal
-     // Inisialisasi LED sebagai output
-     pinMode(led1, OUTPUT);
-     pinMode(led2, OUTPUT);
-     pinMode(led3, OUTPUT);
-   }
-   ```
-
-   Fungsi `setup()` dijalankan sekali pada awal program. Di dalamnya, komunikasi serial diatur dengan baudrate 115200, dan tiga LED (GPIO16, GPIO17, dan GPIO18) diatur sebagai output.
-
-2. **Loop Utama:**
-   ```cpp
-   void loop() {
-     touchValue = touchRead(touchPin);    // Membaca nilai sensor sentuh
-     Serial.print(touchValue);            // Menampilkan nilai sensor sentuh ke Serial Monitor
-
-     // Jika nilai sensor sentuh lebih kecil dari nilai treshold, maka lampu akan blink
-     if(touchValue < threshold){
-       // Mengatur pola blink untuk tiga LED
-       // ...
-     }
-     // Jika tidak, matikan lampu
-     else{
-       // Mematikan semua LED
-       digitalWrite(led1, LOW);
-       digitalWrite(led2, LOW);
-       digitalWrite(led3, LOW);
-     }
-     delay(500); // Delay untuk menghindari deteksi berulang
-   }
-   ```
-
-   Bagian ini merupakan loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sensor sentuh (GPIO4) dibaca menggunakan `touchRead(touchPin)`. Jika nilai tersebut lebih kecil dari nilai treshold, maka akan dijalankan pola blink untuk tiga LED. Jika tidak, semua LED dimatikan. Terdapat delay sebesar 500 milidetik untuk menghindari deteksi berulang. Pola blink pada LED1, LED2, dan LED3 dapat diatur sesuai kebutuhan di dalam bagian yang ditandai sebagai `// Mengatur pola blink untuk tiga LED`.
+Loop utama program yang akan terus diulang. Pada setiap iterasi loop, nilai sensor sentuh (GPIO4) dibaca menggunakan `touchRead(touchPin)`. Jika nilai tersebut lebih kecil dari nilai treshold, maka akan dijalankan pola blink untuk tiga LED. Jika tidak, semua LED dimatikan. Terdapat delay sebesar 500 milidetik untuk menghindari deteksi berulang. Pola blink pada LED1, LED2, dan LED3 dapat diatur sesuai kebutuhan di dalam bagian yang ditandai sebagai `// Mengatur pola blink untuk tiga LED`.
 <br></br>
 
 
